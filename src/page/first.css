@@ -1,3 +1,4 @@
+/* Banner */
 .header-pic {
   object-fit: cover;
   height: 68px;
@@ -6,6 +7,7 @@
   position: relative;
 }
 
+/* Input & Search */
 .logo-line {
   display: flex;
   justify-content: space-between;
@@ -22,21 +24,22 @@
 }
 
 .input {
-    position: absolute;
-    right: 150px;
-    width: 600px;
-    height: 44px;
-    font-size: 1.2rem;
-    border-radius: 8px;
-    background-color: #f1f2f4;
+  position: absolute;
+  right: 150px;
+  width: 600px;
+  height: 44px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background-color: #f1f2f4;
 }
 
 .head-left {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-    height: 44px;
-    background-color: red;
-    margin-left: 12px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  height: 44px;
+  margin-left: 12px;
+  left: 12px;
 }
