@@ -28,9 +28,11 @@
   right: 150px;
   width: 600px;
   height: 44px;
-  font-size: 1.2rem;
+  font-size: 15px;
   border-radius: 8px;
   background-color: #f1f2f4;
+  border: none;
+  padding-right: 55px;
 }
 
 .head-left {
@@ -42,4 +44,12 @@
   height: 44px;
   margin-left: 12px;
   left: 12px;
+}
+
+
+.smalls-pic {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
 }
