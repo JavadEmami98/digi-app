@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import InputOutlinedIcon from "@mui/icons-material/InputOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-//import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import SearchIcon from "@mui/icons-material/Search";
@@ -10,9 +9,12 @@ import StoreIcon from "@mui/icons-material/Store";
 import WhatshotOutlinedIcon from "@mui/icons-material/WhatshotOutlined";
 import PercentOutlinedIcon from "@mui/icons-material/PercentOutlined";
 import LocalOfferOutlinedIcon from "@mui/icons-material/LocalOfferOutlined";
+import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
 import { Link } from "react-router-dom";
 import "./first.css";
 import SwiperHeader from "../component/Swiper/Swiper";
+import Swiper2 from "../component/Swiper2/Swiper2";
+
 
 const CATEGROY = [
   {
@@ -75,43 +77,183 @@ const CATEGROY = [
 const digit = [
   {
     title: "جی‌ کالا جت",
-    image: "https://dkstatics-public.digikala.com/digikala-bellatrix/d0dc31c892be8cf1408e4e14580b3f479da66bd1_1648897133.png",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-bellatrix/d0dc31c892be8cf1408e4e14580b3f479da66bd1_1648897133.png",
     id: 0,
   },
   {
     title: "حراج استایل ",
-    image: "https://dkstatics-public.digikala.com/digikala-bellatrix/625d8883f37944f3f0c4af5fe39435600931ab22_1664309850.png",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-bellatrix/625d8883f37944f3f0c4af5fe39435600931ab22_1664309850.png",
     id: 1,
   },
   {
     title: "خرید اقساطی",
-    image: "https://dkstatics-public.digikala.com/digikala-bellatrix/ac127167132653d14c758748b07824a6a7643a31_1663444619.png",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-bellatrix/ac127167132653d14c758748b07824a6a7643a31_1663444619.png",
     id: 2,
   },
   {
     title: " جی‌کالا سرویس",
-    image: "https://dkstatics-public.digikala.com/digikala-bellatrix/555ad3336a60bbd1433dd7a999f4d487e96602d8_1680678388.png",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-bellatrix/555ad3336a60bbd1433dd7a999f4d487e96602d8_1680678388.png",
     id: 3,
   },
   {
     title: "ماه رمضان",
-    image: "https://dkstatics-public.digikala.com/digikala-bellatrix/269766a358cf34e58ccaf49aa3ac2d2db397af7a_1679516613.png",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-bellatrix/269766a358cf34e58ccaf49aa3ac2d2db397af7a_1679516613.png",
     id: 4,
   },
   {
     title: "دیجی پلاس",
-    image: "https://dkstatics-public.digikala.com/digikala-bellatrix/78ccd40cbf305fb067de78ddab5be84f69589c8d_1648897009.png",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-bellatrix/78ccd40cbf305fb067de78ddab5be84f69589c8d_1648897009.png",
     id: 5,
   },
   {
     title: "ماموریت‌ها ",
-    image: "https://dkstatics-public.digikala.com/digikala-bellatrix/967cbaa25713ca4d0e58cb5aaf0e486ab986d460_1648898393.png",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-bellatrix/967cbaa25713ca4d0e58cb5aaf0e486ab986d460_1648898393.png",
     id: 6,
   },
   {
     title: "  بیشتر",
-    image: "https://dkstatics-public.digikala.com/digikala-bellatrix/967cbaa25713ca4d0e58cb5aaf0e486ab986d460_1648898393.png",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-bellatrix/967cbaa25713ca4d0e58cb5aaf0e486ab986d460_1648898393.png",
     id: 7,
+  },
+];
+
+const product = [
+  {
+    img: "https://dkstatics-public.digikala.com/digikala-products/f06e4dd8c6e6f48c4d0ab61b02fb19ed6747f29d_1665310120.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+    discount: "20%",
+  },
+  {
+    img: "https://dkstatics-public.digikala.com/digikala-products/3f8a0786687e568ab765e11dfeb8aec6c6ec5af6_1675852745.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+    discount: "16%",
+  },
+  {
+    img: "https://dkstatics-public.digikala.com/digikala-products/0f756bdeb01b1cb864c7e0937a74fc7e968b3188_1652251677.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+    discount: "22%",
+  },
+  {
+    img: "https://dkstatics-public.digikala.com/digikala-products/700070.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+    discount: "17%",
+  },
+  {
+    img: "https://dkstatics-public.digikala.com/digikala-products/e0c30ff0ab8bb814796a68b895390a49bfd26c57_1652012531.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+    discount: "15%",
+  },
+  {
+    img: "https://dkstatics-public.digikala.com/digikala-products/e06a70b34f359dad43119c86116cce251d23e0ad_1677929814.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+    discount: "24%",
+  },
+];
+
+const fourpic = [
+  {
+    image:
+      "https://dkstatics-public.digikala.com/digikala-adservice-banners/0bf471872d71cfbfd6351b3e183920180fb6c3dc_1681114971.jpg?x-oss-process=image/quality,q_95",
+  },
+  {
+    image:
+      "https://dkstatics-public.digikala.com/digikala-adservice-banners/3f03bfd2649b2bd7978b2dd33b5e4b16a6ce91b9_1681534434.jpg?x-oss-process=image/quality,q_95",
+  },
+  {
+    image:
+      "https://dkstatics-public.digikala.com/digikala-adservice-banners/2cb745516a58547e5eddd9ddf4ac08cf2d55ea70_1681540637.jpg?x-oss-process=image/quality,q_95",
+  },
+  {
+    image:
+      "https://dkstatics-public.digikala.com/digikala-adservice-banners/6622444e1f351dbc7b5e25bd753a26ce547df04c_1681713343.jpg?x-oss-process=image/quality,q_95",
+  },
+];
+
+const twelvepic = [
+  {
+    title: "موبایل",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-categories/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1662362431.png",
+    id: 0,
+  },
+  {
+    title: " کالای دیجیتال",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-categories/8f80e75e4c2dca42ee0538e100c7a7b05455aa88_1662360265.png",
+    id: 1,
+  },
+  {
+    title: "خانه و آشپزخانه",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-categories/0c3cc1cb589df1c74c4ad95a742bb6df967956a8_1656161119.png",
+    id: 2,
+  },
+  {
+    title: "مد و پوشاک ",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-categories/5795b31a635f1e23df96a908c009f31744ede38f_1656160928.png",
+    id: 3,
+  },
+  {
+    title: "کالاهای سوپرمارکتی",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-categories/da24c42172585abb0c328accf85d071049c4253e_1656161034.png",
+    id: 4,
+  },
+  {
+    title: "کتاب، لوازم تحریر و هنر",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-categories/3582bbed0a53318c2332d2c79b051b226f02a3bb_1656161134.png",
+    id: 5,
+  },
+  {
+    title: "اسباب بازی، کودک و نوزاد",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-categories/0c46d2532d61dd3a5b6a3afc17552c23c1b4d39e_1656160976.png",
+    id: 6,
+  },
+  {
+    title: "زیبایی و سلامت",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-categories/0cefa48f5c58adbbde8c5a76b22ee49de0e667f5_1656161101.png",
+    id: 7,
+  },
+  {
+    title: "ورزش و سفر",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-categories/1c44d5964f259e0725ec86ca9739de888f1862c7_1656161158.png",
+    id: 8,
+  },
+  {
+    title: " ابزار، لوازم ساختمانی و صنعتی ",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-categories/5d89d5b168e5ed079d619181e849cc737ec42c8d_1678698730.png",
+    id: 9,
+  },
+  {
+    title: "خودرو و موتورسیکلت",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-categories/4e985adcf61dd54d4d8abe725a62ba3990ea1eb1_1678698550.png",
+    id: 10,
+  },
+  {
+    title: " محصولات بومی و محلی ",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-categories/af02140ea60e0fd478b09b279976a095c95615b6_1656161174.png",
+    id: 11,
+  },
+];
+
+const twopic = [
+  {
+    image:
+      "https://dkstatics-public.digikala.com/digikala-adservice-banners/c0d274defc8c3006fe3f8b35290fd207d50d9740_1681405346.jpg?x-oss-process=image/quality,q_95",
+  },
+  {
+    image:
+      "https://dkstatics-public.digikala.com/digikala-adservice-banners/46ff3ba5b960203023beb0c3e19df5b9d65b22df_1681405803.jpg?x-oss-process=image/quality,q_95",
   },
 ];
 
@@ -191,7 +333,9 @@ function Index() {
           }}
         >
           <MenuOutlinedIcon sx={{ mr: "15px" }} />
-          <Typography sx={{ ml: "10px" }}>دسته‌بندی کالاها</Typography>
+          <Typography sx={{ ml: "10px", fontSize: "11px" }}>
+            دسته‌بندی کالاها
+          </Typography>
         </Box>
         |
         <Box
@@ -278,7 +422,7 @@ function Index() {
           <Box sx={{ marginRight: "15px", color: "#5a5c7a" }}>
             <Link>سوالی دارید؟ </Link>
           </Box>
-          <Typography sx={{ fontSize: "12px", color: "#5a5c7a", mr: "25px" }}>
+          <Typography sx={{ fontSize: "10px", color: "#5a5c7a", mr: "25px" }}>
             در اینجا بفروشید!
           </Typography>
         </Box>
@@ -298,7 +442,7 @@ function Index() {
           <LocationOnOutlinedIcon
             sx={{ pr: "4px", mr: "8px", color: "#5a5c7a" }}
           />
-          <Typography sx={{ fontSize: "11px", color: "#5a5c7a" }}>
+          <Typography sx={{ fontSize: "9px", color: "#5a5c7a" }}>
             لطفا شهر خود را انتخاب کنید
           </Typography>
         </Box>
@@ -327,7 +471,12 @@ function Index() {
               fontWeight: "light",
             }}
           >
-            <img className="smalls-pic" src={item.image} alt="" loading="lazy"/>
+            <img
+              className="smalls-pic"
+              src={item.image}
+              alt=""
+              loading="lazy"
+            />
             <Typography sx={{ fontSize: "11px", fontWeight: "light" }}>
               {item.title}
             </Typography>
@@ -338,10 +487,10 @@ function Index() {
       <Box
         sx={{
           display: "flex",
-          alignItems:"center",
+          alignItems: "center",
           width: "1304px",
           height: "95px",
-          margin:"24px 200px"
+          margin: "24px 115px",
         }}
       >
         {digit.map((item, index) => (
@@ -359,13 +508,204 @@ function Index() {
               fontWeight: "light",
             }}
           >
-            <img className="smalls-pics" src={item.image} alt="" loading="lazy"/>
+            <img
+              className="smalls-pics"
+              src={item.image}
+              alt=""
+              loading="lazy"
+            />
             <Typography sx={{ fontSize: "10px", fontWeight: "light" }}>
               {item.title}
             </Typography>
           </Box>
         ))}
       </Box>
+      <Swiper2 />
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          flexDirection: "row",
+          alignItems: "center",
+          width: "1304px",
+          height: "110px",
+          backgroundColor: "#e2f0e2",
+          margin: "10px 110px",
+          borderRadius: "15px",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: "row",
+            alignItems: "center",
+            width: "467px",
+            height: "62px",
+            mr: "25px",
+          }}
+        >
+          <img
+            src="https://www.digikala.com/statics/img/png/amazing/fresh.png"
+            alt=""
+          />
+          <img
+            src="https://www.digikala.com/statics/img/svg/typography/fresh.svg"
+            alt=""
+          />
+          <Typography
+            sx={{
+              width: "111px",
+              height: "28px",
+              backgroundColor: "#39ae00",
+              color: "white",
+              padding: "5px 12px",
+              borderRadius: "15px",
+              fontSize: "15px",
+            }}
+          >
+            تا ۵۷٪ تخفیف
+          </Typography>
+        </Box>
+
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-between",
+            width: "492px",
+            height: "74px",
+            /* backgroundColor: "white", */
+            mr: "95px",
+          }}
+        >
+          {product.map((item, index) => (
+            <Box
+              key={index}
+              sx={{
+                display: "flex",
+                position: "relative",
+                justifyContent: "center",
+                flexDirection: "column",
+                alignItems: "center",
+                width: "74px",
+                height: "74px",
+                backgroundColor: "white",
+                borderRadius: "50%",
+              }}
+            >
+              <img className="img-6" src={item.img} alt="" />
+              <Typography
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "34px",
+                  position: "absolute",
+                  height: "20px",
+                  backgroundColor: "red",
+                  mt: "5px",
+                  borderRadius: "16px",
+                  fontSize: "14px",
+                  bottom: "4px",
+                  right: "5px",
+                  color: "white",
+                }}
+              >
+                {item.discount}
+              </Typography>
+            </Box>
+          ))}
+        </Box>
+
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: "row",
+            alignItems: "center",
+            width: "144px",
+            height: "50px",
+            backgroundColor: "white",
+            color: "#39ae00",
+            ml: "25px",
+            borderRadius: "25px",
+            padding: "0 15px",
+          }}
+        >
+          <Typography sx={{ fontSize: "13px" }}>بیش از ۱۰۰ کالا</Typography>
+          <ArrowBackOutlinedIcon />
+        </Box>
+      </Box>
+
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          width: "1304px",
+          height: "236px",
+          mr: "110px",
+          mt: "24px",
+        }}
+      >
+        {fourpic.map((item, index) => (
+          <img key={index} className="four-pic" src={item.image} alt="" />
+        ))}
+      </Box>
+      <Typography sx={{ mt: "25px", mr: "670px", fontSize: "20px" }}>
+        دسته‌بندی‌های دیجی‌ کالا
+      </Typography>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+          width: "1272px",
+          height: "441px",
+          /*      backgroundColor: "red", */
+          mr: "122px",
+          mt: "40px",
+        }}
+      >
+        {twelvepic.map((item, index) => (
+          <Box
+            key={index}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "212px",
+              height: "205px",
+              backgroundColor: "white",
+            }}
+          >
+            <img className="wrap-pic" src={item.image} alt="" />
+            <Typography sx={{ fontSize: "13px" }}>{item.title}</Typography>
+          </Box>
+        ))}
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-between",
+          width: "1304px",
+          height: "258px",
+          mr: "122px",
+        }}
+      >
+        {twopic.map((item, index) => (
+          <img key={index} className="twopic" src={item.image} alt="" />
+        ))}
+      </Box>
+      <Typography sx={{ mt: "25px", mr: "670px", fontSize: "20px" }}>
+        پیشنهاد دیجی‌ کالا
+      </Typography>
+      {/* <Swiper3/> */}
     </div>
   );
 }
