@@ -14,7 +14,9 @@ import { Link } from "react-router-dom";
 import "./first.css";
 import SwiperHeader from "../component/Swiper/Swiper";
 import Swiper2 from "../component/Swiper2/Swiper2";
-
+import BasicGrid from "../component/Grid/BasicGrid";
+import StarRoundedIcon from "@mui/icons-material/StarRounded";
+import Grid2 from "../component/Grid2/Grid2";
 
 const CATEGROY = [
   {
@@ -254,6 +256,17 @@ const twopic = [
   {
     image:
       "https://dkstatics-public.digikala.com/digikala-adservice-banners/46ff3ba5b960203023beb0c3e19df5b9d65b22df_1681405803.jpg?x-oss-process=image/quality,q_95",
+  },
+];
+
+const twopics = [
+  {
+    image:
+      "https://dkstatics-public.digikala.com/digikala-adservice-banners/ea927afe2001cdcd8df9d0dd4cd540f259ec93d1_1681405138.jpg?x-oss-process=image/quality,q_95",
+  },
+  {
+    image:
+      "https://dkstatics-public.digikala.com/digikala-adservice-banners/662c05a7734c5e7f1ea7cc77a5e6c10f09bf25d4_1671873768.jpg?x-oss-process=image/quality,q_95",
   },
 ];
 
@@ -664,7 +677,6 @@ function Index() {
           flexWrap: "wrap",
           width: "1272px",
           height: "441px",
-          /*      backgroundColor: "red", */
           mr: "122px",
           mt: "40px",
         }}
@@ -679,7 +691,7 @@ function Index() {
               alignItems: "center",
               width: "212px",
               height: "205px",
-              backgroundColor: "white",
+              backgroundColor: "#white",
             }}
           >
             <img className="wrap-pic" src={item.image} alt="" />
@@ -702,10 +714,71 @@ function Index() {
           <img key={index} className="twopic" src={item.image} alt="" />
         ))}
       </Box>
-      <Typography sx={{ mt: "25px", mr: "670px", fontSize: "20px" }}>
+      <Typography sx={{ mt: "25px", mr: "710px", fontSize: "20px" }}>
         پیشنهاد دیجی‌ کالا
       </Typography>
-      {/* <Swiper3/> */}
+      <BasicGrid />
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "1304px",
+          height: "224px",
+          backgroundColor: "red",
+          flexDirection: "column",
+          mr: "122px",
+          mt: "24px",
+          border: "1px solid #e0e0e6",
+          borderRadius: "16px",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "1304px",
+            height: "44px",
+            backgroundColor: "green",
+          }}
+        >
+          <StarRoundedIcon sx={{ color: "yellow" }} />
+          <Typography sx={{ mr: "5px", fontSize: "20px" }}>
+            محبوب‌ترین برندها
+          </Typography>
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-between",
+          width: "1304px",
+          height: "258px",
+          mr: "122px",
+          mt:"24px"
+        }}
+      >
+        {twopics.map((item, index) => (
+          <img key={index} className="twopic" src={item.image} alt="" />
+        ))}
+      </Box>
+      <Box sx={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-between",
+          width: "1304px",
+          height: "420px",
+          border: "1px solid #e0e0e6",
+          borderRadius: "16px",
+          mr: "122px",
+          mt:"24px"
+        }}>
+          <Grid2/>
+      </Box>
     </div>
   );
 }
