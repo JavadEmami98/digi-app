@@ -76,7 +76,7 @@ export default function Grid44() {
       <Box>
         <Grid container rowSpacing={0.25} columnSpacing={0.25}>
         {PICTURES.map((item,index)=>(
-          <Grid key={index} item image={item.img} lg={6}>
+          <Grid key={index} item image={item.cartImage.img} lg={6}>
             <Cart44/>
           </Grid>))}
           {/* <Grid item lg={6}>

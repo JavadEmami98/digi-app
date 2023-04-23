@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import Grid44 from "../Grid44/Grid44";
+import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
 
 function CartGrid() {
   return (
@@ -12,7 +13,7 @@ function CartGrid() {
           width: "325px",
           height: "418px",
           background: "red",
-          padding:"8px 20px",
+          padding: "8px 20px",
         }}
       >
         <Box
@@ -25,8 +26,24 @@ function CartGrid() {
         >
           گوشی موبایل
         </Box>
-        <Typography sx={{fontSize:"11px" ,color:"#767790"}}>بر اساس بازدیدهای شما</Typography>
-        <Grid44/>
+        <Typography sx={{ fontSize: "11px", color: "#767790" }}>
+          بر اساس بازدیدهای شما
+        </Typography>
+        <Grid44 />
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            margin: "4px 0px 12px",
+            width: "284.85px",
+            height: "26.04px",
+            color:"#19bfd3"
+          }}
+        >
+          <Typography>مشاهده</Typography>
+          <ArrowBackIosNewOutlinedIcon sx={{fontSize:"small"}}/>
+        </Box>
       </Box>
     </div>
   );

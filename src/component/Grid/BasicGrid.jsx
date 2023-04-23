@@ -77,41 +77,42 @@ export default function BasicGrid() {
           <Grid item lg={2} key={index}>
             <Card title={item.title} image={item.image} />
           </Grid>
-        ))}
-        {/* <Grid item lg={2} key={index}>
-          <Card title={item.title} image={item.image}/>
-        </Grid>
-        <Grid item lg={2} key={index}>
-          <Card title={item.title} image={item.image}/>
-        </Grid>
-        <Grid item lg={2} key={index}>
-          <Card title={item.title} image={item.image}/>
-        </Grid>
-        <Grid item lg={2} key={index}>
-          <Card title={item.title} image={item.image}/>
-        </Grid>
-        <Grid item lg={2} key={index}>
-          <Card title={item.title} image={item.image}/>
-        </Grid>
-        <Grid item lg={2} key={index}>
-          <Card title={item.title} image={item.image}/>
-        </Grid>
-        <Grid item lg={2} key={index}>
-          <Card title={item.title} image={item.image}/>
-        </Grid>
-        <Grid item lg={2} key={index}>
-          <Card title={item.title} image={item.image}/>
-        </Grid>
-        <Grid item lg={2} key={index}>
-          <Card title={item.title} image={item.image}/>
-        </Grid>
-        <Grid item lg={2} key={index}>
-          <Card title={item.title} image={item.image}/>
-        </Grid>
-        <Grid item lg={2} key={index}>
-          <Card title={item.title} image={item.image}/>
-        </Grid></div> */}
+        ))}  
       </Grid>
     </Box>
   );
 }
+
+/* <Grid item lg={2} key={index}>
+          <Card title={item.title} image={item.image}/>
+        </Grid>
+        <Grid item lg={2} key={index}>
+          <Card title={item.title} image={item.image}/>
+        </Grid>
+        <Grid item lg={2} key={index}>
+          <Card title={item.title} image={item.image}/>
+        </Grid>
+        <Grid item lg={2} key={index}>
+          <Card title={item.title} image={item.image}/>
+        </Grid>
+        <Grid item lg={2} key={index}>
+          <Card title={item.title} image={item.image}/>
+        </Grid>
+        <Grid item lg={2} key={index}>
+          <Card title={item.title} image={item.image}/>
+        </Grid>
+        <Grid item lg={2} key={index}>
+          <Card title={item.title} image={item.image}/>
+        </Grid>
+        <Grid item lg={2} key={index}>
+          <Card title={item.title} image={item.image}/>
+        </Grid>
+        <Grid item lg={2} key={index}>
+          <Card title={item.title} image={item.image}/>
+        </Grid>
+        <Grid item lg={2} key={index}>
+          <Card title={item.title} image={item.image}/>
+        </Grid>
+        <Grid item lg={2} key={index}>
+          <Card title={item.title} image={item.image}/>
+        </Grid></div> */

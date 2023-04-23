@@ -10,6 +10,12 @@ import WhatshotOutlinedIcon from "@mui/icons-material/WhatshotOutlined";
 import PercentOutlinedIcon from "@mui/icons-material/PercentOutlined";
 import LocalOfferOutlinedIcon from "@mui/icons-material/LocalOfferOutlined";
 import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
+import RocketOutlinedIcon from "@mui/icons-material/RocketOutlined";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import RiceBowlIcon from "@mui/icons-material/RiceBowl";
+import AddTaskIcon from "@mui/icons-material/AddTask";
+import ConfirmationNumberOutlinedIcon from "@mui/icons-material/ConfirmationNumberOutlined";
+import LocalFireDepartmentOutlinedIcon from "@mui/icons-material/LocalFireDepartmentOutlined";
 import { Link } from "react-router-dom";
 import "./first.css";
 import SwiperHeader from "../component/Swiper/Swiper";
@@ -17,6 +23,7 @@ import Swiper2 from "../component/Swiper2/Swiper2";
 import BasicGrid from "../component/Grid/BasicGrid";
 import StarRoundedIcon from "@mui/icons-material/StarRounded";
 import Grid2 from "../component/Grid2/Grid2";
+import GridPurple from "../component/GridPurple/GridPurple";
 
 const CATEGROY = [
   {
@@ -758,14 +765,15 @@ function Index() {
           width: "1304px",
           height: "258px",
           mr: "122px",
-          mt:"24px"
+          mt: "24px",
         }}
       >
         {twopics.map((item, index) => (
           <img key={index} className="twopic" src={item.image} alt="" />
         ))}
       </Box>
-      <Box sx={{
+      <Box
+        sx={{
           display: "flex",
           flexDirection: "row",
           alignItems: "center",
@@ -775,9 +783,346 @@ function Index() {
           border: "1px solid #e0e0e6",
           borderRadius: "16px",
           mr: "122px",
-          mt:"24px"
+          mt: "24px",
+        }}
+      >
+        <Grid2 />
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+          width: "1304px",
+          height: "388px",
+          border: "1px solid #e0e0e6",
+          borderRadius: "16px",
+          mr: "122px",
+          mt: "24px",
+          backgroundColor: "#941b80",
+          padding: "16px",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "start",
+            alignItems: "start",
+            width: "392px",
+            height: "114px",
+            pr: "24px",
+            pt: "24px",
+          }}
+        >
+          <img
+            className="logo-jplus"
+            src="https://www.digikala.com/statics/img/svg/digiplus-logo.svg"
+            alt=""
+          />
+          <Typography sx={{ fontSize: "14px", color: "white", mt: "4px" }}>
+            خدمات ویژه برای اعضای جی‌ پلاس
+          </Typography>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+              width: "105px",
+              height: "35px",
+              mt: "12px",
+              padding: "4px 16px",
+              border: "1px solid white",
+              borderRadius: "8px",
+            }}
+          >
+            <Typography sx={{ fontSize: "12px", color: "white" }}>
+              عضویت
+            </Typography>
+            <ArrowBackOutlinedIcon sx={{ color: "white" }} />
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            width: "868px",
+            height: "356px",
+            backgroundColor: "white",
+            padding: "0px 16px",
+            borderRadius: "8px",
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              width: "836px",
+              height: "66.4px",
+              padding: "16px 0px",
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                flexDirection: "row",
+                width: "152px",
+                height: "35px",
+                margin: "0px 0px 0px 16px",
+              }}
+            >
+              <RocketOutlinedIcon
+                sx={{ color: "#a63489", width: "24px", height: "24px" }}
+              />
+              <Typography sx={{ fontSize: "16px" }}>
+                ارسال فوری رایگان
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                flexDirection: "row",
+                width: "85px",
+                height: "36px",
+                color: "#a63489",
+                padding: "0px 7px",
+              }}
+            >
+              <Typography sx={{ fontSize: "12px" }}>مشاهده همه</Typography>
+              <ArrowBackIosIcon sx={{ fontSize: "small" }} />
+            </Box>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              width: "850px",
+              height: "404px",
+              mb: "12px",
+            }}
+          >
+            <GridPurple />
+          </Box>
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          flexDirection: "row",
+          width: "1304px",
+          height: "87.2px",
+          mr: "122px",
+          mt: "8px",
+          padding: "12px 16px",
+          borderRadius: "16px",
+          background:
+            "linear-gradient(76.02deg,#35a6c8 33.32%,#007295 71.55%),radial-gradient(21.29% 87.33% at 50% 50.67%,#7cf2f6 0,#35a6c8 100%)",
+        }}
+      >
+        <img
+          className="digi-club"
+          src="https://www.digikala.com/statics/img/svg/club/digiclub-logo-white.svg"
+          alt=""
+        />
+        <Box
+          sx={{
+            display: "flex",
+            gap: "4px",
+            overflow: "hidden",
+            width: "811.99px",
+            height: "63.2px",
+            borderRadius: "8px",
+            background: "white",
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              overflow: "hidden",
+              flexDirection: "row",
+              width: "273.19px",
+              height: "63.2px",
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                flexDirection: "row",
+                width: "85.99px",
+                height: "26.4px",
+                margin: "0px 16px 0px 0px",
+              }}
+            >
+              <RiceBowlIcon sx={{ color: "#00bfd6", pr: "7px" }} />
+              <Typography sx={{ fontSize: "12px", pr: "7px" }}>
+                چرخ و بخت
+              </Typography>
+            </Box>
+            <img
+              className="charkh"
+              src="https://www.digikala.com/statics/img/png/digiclub/wheel-spinner.jpg"
+              alt=""
+            />
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              overflow: "hidden",
+              flexDirection: "row",
+              width: "274.19px",
+              height: "63.2px",
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                flexDirection: "row",
+                width: "85.99px",
+                height: "26.4px",
+                margin: "0px 16px 0px 0px",
+              }}
+            >
+              <AddTaskIcon sx={{ color: "#00bfd6", pr: "7px" }} />
+              <Typography sx={{ fontSize: "12px", pr: "7px" }}>
+                ماموریت ها
+              </Typography>
+            </Box>
+            <img
+              className="charkh"
+              src="https://www.digikala.com/statics/img/png/digiclub/missions.png"
+              alt=""
+            />
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              overflow: "hidden",
+              flexDirection: "row",
+              width: "256.5px",
+              height: "63.2px",
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                flexDirection: "row",
+                width: "85.99px",
+                height: "26.4px",
+                margin: "0px 16px 0px 0px",
+              }}
+            >
+              <ConfirmationNumberOutlinedIcon
+                sx={{ color: "#00bfd6", pr: "7px" }}
+              />
+              <Typography sx={{ fontSize: "12px", pr: "7px" }}>
+                جایزه ها
+              </Typography>
+            </Box>
+            <img
+              className="charkh"
+              src="https://www.digikala.com/statics/img/png/digiclub/awards.png"
+              alt=""
+            />
+          </Box>
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-between",
+          width: "1304px",
+          height: "420px",
+          border: "1px solid #e0e0e6",
+          borderRadius: "16px",
+          mr: "122px",
+          mt: "24px",
+        }}
+      >
+        <Grid2 />
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignContent: "center",
+          width: "1304px",
+          height: "403.7px",
+          mt: "24px",
+          mr: "122px",
+          padding: "16px 0px",
+          border: "1px solid #e0e0e6",
+          borderRadius: "16px",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            position: "relative",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: "0px 20px",
+            width: "1302.4px",
+            height: "44.1px",
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "199.29px",
+              height: "44.1px",
+            }}
+          >
+            <LocalFireDepartmentOutlinedIcon sx={{ color: "#f9a825" }} />
+            <Typography sx={{ fontSize: "18px", pr: "5px" }}>
+              پرفروش‌ترین کالاها
+            </Typography>
+          </Box>
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          width: "1304px",
+          height: "910.69px",
+          mt: "24px",
+          mr: "122px",
+          border: "1px solid #e0e0e6",
+          borderRadius: "16px",
+          padding: "0px 12px 12px",
+        }}
+      >
+        <Box sx={{
+          display:"flex",
+          justifyContent:"center",
+          alignItems:"center",
+          width:"1278px",
+          height:"76.1px",
+          margin:"0px 0px 8px",
+          padding:"16px 0px",
         }}>
-          <Grid2/>
+          <LocalOfferOutlinedIcon sx={{color:"#ef4056"}}/>
+          <Typography sx={{fontSize:"21px",mr:"8px"}}>منتخب محصولات تخفیف و حراج</Typography>
+        </Box>
       </Box>
     </div>
   );

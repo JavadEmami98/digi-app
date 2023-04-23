@@ -87,3 +87,36 @@
   object-fit: cover;
   border-radius: 16px;
 }
+
+.logo-jplus {
+  width: 128px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.img-purple {
+  width: 116px;
+  height: 116px;
+  object-fit: contain;
+}
+
+
+.pic-44 {
+  width: 126px ;
+  height: 126px ;
+  object-fit: cover;
+}
+
+.digi-club {
+  display: inline-block;
+  width: 119px ;
+  height: 33px ;
+  object-fit: contain;
+}
+
+.charkh {
+  display: inline-block;
+  width: 168px ;
+  height: 60px ;
+  object-fit: cover;
+}
