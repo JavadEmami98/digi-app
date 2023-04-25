@@ -16,6 +16,8 @@ import RiceBowlIcon from "@mui/icons-material/RiceBowl";
 import AddTaskIcon from "@mui/icons-material/AddTask";
 import ConfirmationNumberOutlinedIcon from "@mui/icons-material/ConfirmationNumberOutlined";
 import LocalFireDepartmentOutlinedIcon from "@mui/icons-material/LocalFireDepartmentOutlined";
+import ArrowBackIosNewOutlinedIcon from "@mui/icons-material/ArrowBackIosNewOutlined";
+import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
 import { Link } from "react-router-dom";
 import "./first.css";
 import SwiperHeader from "../component/Swiper/Swiper";
@@ -24,6 +26,7 @@ import BasicGrid from "../component/Grid/BasicGrid";
 import StarRoundedIcon from "@mui/icons-material/StarRounded";
 import Grid2 from "../component/Grid2/Grid2";
 import GridPurple from "../component/GridPurple/GridPurple";
+import GridF from "../component/GridCartF/GridF";
 
 const CATEGROY = [
   {
@@ -1111,19 +1114,283 @@ function Index() {
           padding: "0px 12px 12px",
         }}
       >
-        <Box sx={{
-          display:"flex",
-          justifyContent:"center",
-          alignItems:"center",
-          width:"1278px",
-          height:"76.1px",
-          margin:"0px 0px 8px",
-          padding:"16px 0px",
-        }}>
-          <LocalOfferOutlinedIcon sx={{color:"#ef4056"}}/>
-          <Typography sx={{fontSize:"21px",mr:"8px"}}>منتخب محصولات تخفیف و حراج</Typography>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "1278px",
+            height: "76.1px",
+            margin: "0px 0px 8px",
+            padding: "16px 0px",
+          }}
+        >
+          <LocalOfferOutlinedIcon sx={{ color: "#ef4056" }} />
+          <Typography sx={{ fontSize: "21px", mr: "8px" }}>
+            منتخب محصولات تخفیف و حراج
+          </Typography>
         </Box>
       </Box>
+      <Box
+        sx={{
+          display: "block",
+          width: "1304px",
+          height: "346px",
+          mt: "24px",
+          mr: "122px",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            padding: "16px 20px",
+            width: "1304px",
+            height: "66.4px",
+          }}
+        >
+          <Typography sx={{ fontSize: "16px" }}>خواندنی‌ها</Typography>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              width: "168.36px",
+              height: "26.04px",
+              color: "#19bfd3",
+              fontSize: "12px",
+            }}
+          >
+            <Typography sx={{ fontSize: "12px" }}>
+              مطالب بیشتر در دیجی‌کالا مگ
+            </Typography>
+            <ArrowBackIosNewOutlinedIcon
+              sx={{ fontSize: "small", mr: "3px" }}
+            />
+          </Box>
+        </Box>
+        <GridF />
+      </Box>
+      <footer className="footer">
+        <Box
+          sx={{
+            width: "1200px",
+            height: "965px",
+            padding: "0px 20px",
+            background: "purple",
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              height: "40px",
+              width: "1160px",
+            }}
+          >
+            <img
+              className="logo-fa"
+              src="https://www.digikala.com/statics/img/svg/digi.svg"
+              alt=""
+              loading="lazy"
+            />
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                padding: "8px 16px",
+                width: "137.81px",
+                height: "40px",
+                border: "1px solid #e0e0e6",
+                borderRadius: "8px",
+                cursor: "pointer",
+              }}
+            >
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "104.21px",
+                  height: "26.04px",
+                }}
+              >
+                <Typography
+                  sx={{ fontSize: "12px", color: "#9e9fb1", ml: "8px" }}
+                >
+                  بازگشت به بالا
+                </Typography>
+                <KeyboardArrowUpOutlinedIcon sx={{ color: "#9e9fb1" }} />
+              </Box>
+            </Box>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              mt: "12px",
+              mb: "4px",
+              flexWrap: "nowrap",
+              width: "1160",
+              height: "26.04px",
+              background: "yellow",
+              color: "#3f4064",
+            }}
+          >
+            <Typography sx={{ fontSize: "14px", color: "#3f4064" }}>
+              تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱
+            </Typography>
+            <Box
+              sx={{
+                color: "#9e9fb1",
+                pr: "20px",
+                pl: "20px",
+              }}
+            >
+              |
+            </Box>
+            <Typography sx={{ fontSize: "14px", color: "#3f4064" }}>
+              ۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم
+            </Typography>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              width: "1160px",
+              height: "103.86px",
+              margin: "32px 0",
+              background: "gray",
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                flexDirection: "column",
+                alignItems: "center",
+                width: "226.05px",
+                height: "103.86px",
+                padding: "12px 0",
+                background: "red",
+              }}
+            >
+              <img
+                src="https://www.digikala.com/statics/img/svg/footer/express-delivery.svg"
+                alt=""
+              />
+              <Typography sx={{ fontSize: "10px", color: "#3f4064" }}>
+                اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                flexDirection: "column",
+                alignItems: "center",
+                width: "224.36px",
+                height: "103.86px",
+                padding: "12px 0",
+                background: "red",
+              }}
+            >
+              <img
+                src="https://www.digikala.com/statics/img/svg/footer/cash-on-delivery.svg"
+                alt=""
+              />
+              <Typography sx={{ fontSize: "10px", color: "#3f4064" }}>
+                امکان پرداخت در محل
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                flexDirection: "column",
+                alignItems: "center",
+                width: "226.89px",
+                height: "103.86px",
+                padding: "12px 0",
+                background: "red",
+              }}
+            >
+              <img
+                src="https://www.digikala.com/statics/img/svg/footer/support.svg"
+                alt=""
+              />
+              <Typography sx={{ fontSize: "10px", color: "#3f4064" }}>
+                ۷ روز ﻫﻔﺘﻪ، ۲۴ ﺳﺎﻋﺘﻪ
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                flexDirection: "column",
+                alignItems: "center",
+                width: "258.89px",
+                height: "103.86px",
+                padding: "12px 0",
+                background: "red",
+              }}
+            >
+              <img
+                src="https://www.digikala.com/statics/img/svg/footer/days-return.svg"
+                alt=""
+              />
+              <Typography sx={{ fontSize: "10px", color: "#3f4064" }}>
+                هفت روز ضمانت بازگشت کالا
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                flexDirection: "column",
+                alignItems: "center",
+                width: "223.89px",
+                height: "103.86px",
+                padding: "12px 0",
+                background: "red",
+              }}
+            >
+              <img
+                src="https://www.digikala.com/statics/img/svg/footer/original-products.svg"
+                alt=""
+              />
+              <Typography sx={{ fontSize: "10px", color: "#3f4064" }}>
+                ﺿﻤﺎﻧﺖ اﺻﻞ ﺑﻮدن ﮐﺎﻟﺎ
+              </Typography>
+            </Box>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              flexWrap: "wrap",
+              mb: "32px",
+              width: "1160px",
+              height: "271px",
+              background: "gray",
+            }}
+          >
+            <Box
+              sx={{
+                display: "block",
+                width: "267.13",
+                height: "271px",
+                flexGrow: 1,
+              }}
+            >
+              
+            </Box>
+          </Box>
+        </Box>
+      </footer>
     </div>
   );
 }
