@@ -1,0 +1,18 @@
+.swiper4 {
+  width: 1286px;
+  height: 298px;
+  background: rgb(145, 142, 142);
+}
+
+.swiper-slide4 {
+  text-align: center;
+  font-size: 15px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 306.5px;
+  height: 298px;
+  background: red;
+  margin-left: 20px;
+}

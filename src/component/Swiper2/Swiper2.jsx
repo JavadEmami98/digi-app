@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "./Swiper2.css";
 import { Pagination } from "swiper";
 import Cart from "../Cart/Cart";
+import { Box } from "@mui/material";
 
 const cart = [
   {
@@ -84,17 +85,31 @@ export default function Swiper2() {
         }}
         modules={[Pagination]}
         className="swiper2"
-      > <div className="pic-1">
+      >
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "center",
+            mr:"2px",
+          }}
+        >
           <img
-            src="https://api.tahlilmobile.ir/public/downloadFileById/657"
-            alt=""
-          />
-        </div>
+          src="https://api.tahlilmobile.ir/public/downloadFileById/657"
+          alt=""
+        />
+        </Box>
+        
+
         {cart.map((item, index) => (
-        <SwiperSlide className="swiper-slide2">
-          <Cart key={index} image={item.image} price={item.price} dicount={item.dicount}/>
-        </SwiperSlide>
-         ))}
+          <SwiperSlide key={index} className="swiper-slide2">
+            <Cart
+              image={item.image}
+              price={item.price}
+              dicount={item.dicount}
+            />
+          </SwiperSlide>
+        ))}
         {/* <SwiperSlide className="swiper-slide2">{<Cart />}</SwiperSlide>
         <SwiperSlide className="swiper-slide2">{<Cart />}</SwiperSlide>
         <SwiperSlide className="swiper-slide2">{<Cart />}</SwiperSlide>
@@ -106,7 +121,6 @@ export default function Swiper2() {
         <SwiperSlide className="swiper-slide2">{<Cart />}</SwiperSlide>
         <SwiperSlide className="swiper-slide2">{<Cart />}</SwiperSlide>
         <SwiperSlide className="swiper-slide2">{<Cart />}</SwiperSlide> */}
-       
       </Swiper>
     </>
   );

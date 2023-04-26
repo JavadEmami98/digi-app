@@ -131,7 +131,7 @@
 .footer {
   width: 100%;
   height: 1158.2px;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 48px auto;
   padding-top: 32px;
   border-top: 1px solid #f1f2f4;
@@ -142,4 +142,64 @@
   width: 113.33px;
   height: 30px;
   object-fit: contain;
+}
+
+
+.logo-r {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+}
+
+.pic-4ft {
+  width: 142px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 4px;
+  margin: 8px;
+}
+
+.senoghte {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.rezvan {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+}
+
+
+.offer-pics {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
+
+.swiper3-img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+}
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 244, 244);
+  color: black;
+  font-size: 15px !important;
+}
+
+.swiper-pagination-bullet{
+  display: none;
 }
