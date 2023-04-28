@@ -21,3 +21,31 @@
   height: 100%;
   object-fit: cover;
 }
+
+.swiper-button-next {
+  left: auto !important;
+  right: 120px !important;
+  bottom: 20px !important;
+  top: auto !important;
+  width: 30px !important;
+  height: 30px !important;
+  opacity: 0;
+  transition: opacity 300ms !important;
+}
+
+.swiper-button-prev {
+  left: auto !important;
+  right: 80px !important;
+  bottom: 20px !important;
+  top: auto !important;
+  width: 30px !important;
+  height: 30px !important;
+  opacity: 0;
+  transition: opacity 300ms !important;
+}
+
+
+.swiper1:hover .swiper-button-prev, .swiper1:hover .swiper-button-next {
+  opacity: 1 !important;
+  transition: opacity 300ms !important;
+}

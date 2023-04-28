@@ -75,31 +75,24 @@ const cart = [
 
 export default function Swiper2() {
   return (
-    <>
+    <Box sx={{background:"#ef4056" , my:6 , py:4 , px:5}}>
       <Swiper
-        slidesPerView={4}
-        spaceBetween={30}
-        centeredSlides={true}
+        slidesPerView={6}
+        spaceBetween={2}
+    /*     centeredSlides={true} */
         pagination={{
           clickable: true,
         }}
         modules={[Pagination]}
         className="swiper2"
       >
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "start",
-            alignItems: "center",
-            mr:"2px",
-          }}
-        >
+        <SwiperSlide className="swiper-slide2">
           <img
-          src="https://api.tahlilmobile.ir/public/downloadFileById/657"
-          alt=""
-        />
-        </Box>
-        
+            src="https://api.tahlilmobile.ir/public/downloadFileById/657"
+            alt=""
+            style={{width:"100%" , objectFit:"cover" , height:"100%" , maxHeight:"280px",background:"#ef4056"}}
+          />
+        </SwiperSlide>
 
         {cart.map((item, index) => (
           <SwiperSlide key={index} className="swiper-slide2">
@@ -110,18 +103,7 @@ export default function Swiper2() {
             />
           </SwiperSlide>
         ))}
-        {/* <SwiperSlide className="swiper-slide2">{<Cart />}</SwiperSlide>
-        <SwiperSlide className="swiper-slide2">{<Cart />}</SwiperSlide>
-        <SwiperSlide className="swiper-slide2">{<Cart />}</SwiperSlide>
-        <SwiperSlide className="swiper-slide2">{<Cart />}</SwiperSlide>
-        <SwiperSlide className="swiper-slide2">{<Cart />}</SwiperSlide>
-        <SwiperSlide className="swiper-slide2">{<Cart />}</SwiperSlide>
-        <SwiperSlide className="swiper-slide2">{<Cart />}</SwiperSlide>
-        <SwiperSlide className="swiper-slide2">{<Cart />}</SwiperSlide>
-        <SwiperSlide className="swiper-slide2">{<Cart />}</SwiperSlide>
-        <SwiperSlide className="swiper-slide2">{<Cart />}</SwiperSlide>
-        <SwiperSlide className="swiper-slide2">{<Cart />}</SwiperSlide> */}
       </Swiper>
-    </>
+    </Box>
   );
 }
