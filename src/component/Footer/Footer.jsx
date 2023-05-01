@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
 import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
 import ArrowBackIosNewOutlinedIcon from "@mui/icons-material/ArrowBackIosNewOutlined";
+import FooterGrid from "./FooterGrid";
 
 const rezvan = [
   { image: "https://www.digikala.com/statics/img/png/rezi.png" },
@@ -42,7 +42,7 @@ function Footer() {
               justifyContent: "space-between",
               alignItems: "center",
               height: "40px",
-              width: "100%",
+              /* width: "100%", */
             }}
           >
             <img
@@ -89,7 +89,6 @@ function Footer() {
               mt: "12px",
               mb: "4px",
               flexWrap: "nowrap",
-
               width: "1160",
               height: "26.04px",
               color: "#3f4064",
@@ -116,10 +115,11 @@ function Footer() {
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
-              width: "100%",
-              maxwidth: "1160px",
+              /* width: "100%", */
+              /* maxwidth: "1160px", */
               height: "103.86px",
               margin: "32px 0",
+              padding:"0px 110px"
             }}
           >
             <Box
@@ -128,7 +128,7 @@ function Footer() {
                 justifyContent: "space-between",
                 flexDirection: "column",
                 alignItems: "center",
-                width: "100%",
+               /*  width: "100%", */
                 height: "103.86px",
                 padding: "12px 0",
               }}
@@ -147,7 +147,7 @@ function Footer() {
                 justifyContent: "space-between",
                 flexDirection: "column",
                 alignItems: "center",
-                width: "100%",
+              /*   width: "100%", */
                 height: "103.86px",
                 padding: "12px 0",
               }}
@@ -166,7 +166,7 @@ function Footer() {
                 justifyContent: "space-between",
                 flexDirection: "column",
                 alignItems: "center",
-                width: "100%",
+                /* width: "100%", */
                 height: "103.86px",
                 padding: "12px 0",
               }}
@@ -185,7 +185,7 @@ function Footer() {
                 justifyContent: "space-between",
                 flexDirection: "column",
                 alignItems: "center",
-                width: "100%",
+                /* width: "100%", */
                 height: "103.86px",
                 padding: "12px 0",
               }}
@@ -204,7 +204,7 @@ function Footer() {
                 justifyContent: "space-between",
                 flexDirection: "column",
                 alignItems: "center",
-                width: "100%",
+               /*  width: "100%", */
                 height: "103.86px",
                 padding: "12px 0",
               }}
@@ -218,121 +218,7 @@ function Footer() {
               </Typography>
             </Box>
           </Box>
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "space-between",
-              flexWrap: "wrap",
-              mb: "32px",
-              width: "100%",
-              height: "271px",
-              background: "white",
-            }}
-          >
-            <Box
-              sx={{
-                display: "block",
-                width: "unset",
-                flexGrow: 1,
-              }}
-            >
-              <Typography
-                sx={{ mb: "8px", color: "#3f4064", fontSize: "14px" }}
-              >
-                با دیجی‌کالا
-              </Typography>
-              <Box sx={{ fontSize: "13px", color: "#767790", mb: "8px" }}>
-                <Link to={"https://about.digikala.com/newsroom/"}>
-                  اتاق خبر دیجی‌کالا
-                </Link>
-                <Link
-                  to={"https://www.digikala.com/landings/seller-introduction/"}
-                >
-                  فروش در دیجی‌کالا
-                </Link>
-                <Link to={"https://careers.digikala.com/"}>فرصت‌های شغلی</Link>
-                <Link
-                  to={
-                    "https://digikalapublic.whistleblowernetwork.net/frontpage"
-                  }
-                >
-                  گزارش تخلف در دیجی‌کالا
-                </Link>
-                <Link to={"https://www.digikala.com/page/contact-us/"}>
-                  تماس با دیجی‌کالا
-                </Link>
-                <Link to={"https://about.digikala.com/"}>درباره دیجی‌کالا</Link>
-              </Box>
-            </Box>
-            <Box
-              sx={{
-                display: "block",
-                width: "unset",
-              }}
-            >
-              <Typography
-                sx={{ mb: "8px", color: "#3f4064", fontSize: "14px" }}
-              >
-                با دیجی‌کالا
-              </Typography>
-              <Box sx={{ fontSize: "13px", color: "#767790", mb: "8px" }}>
-                <Link to={"https://about.digikala.com/newsroom/"}>
-                  اتاق خبر دیجی‌کالا
-                </Link>
-                <Link
-                  to={"https://www.digikala.com/landings/seller-introduction/"}
-                >
-                  فروش در دیجی‌کالا
-                </Link>
-                <Link to={"https://careers.digikala.com/"}>فرصت‌های شغلی</Link>
-                <Link
-                  to={
-                    "https://digikalapublic.whistleblowernetwork.net/frontpage"
-                  }
-                >
-                  گزارش تخلف در دیجی‌کالا
-                </Link>
-                <Link to={"https://www.digikala.com/page/contact-us/"}>
-                  تماس با دیجی‌کالا
-                </Link>
-                <Link to={"https://about.digikala.com/"}>درباره دیجی‌کالا</Link>
-              </Box>
-            </Box>
-            <Box
-              sx={{
-                display: "block",
-                width: "unset",
-              }}
-            >
-              <Typography
-                sx={{ mb: "8px", color: "#3f4064", fontSize: "14px" }}
-              >
-                با دیجی‌کالا
-              </Typography>
-              <Box sx={{ fontSize: "13px", color: "#767790", mb: "8px" }}>
-                <Link to={"https://about.digikala.com/newsroom/"}>
-                  اتاق خبر دیجی‌کالا
-                </Link>
-                <Link
-                  to={"https://www.digikala.com/landings/seller-introduction/"}
-                >
-                  فروش در دیجی‌کالا
-                </Link>
-                <Link to={"https://careers.digikala.com/"}>فرصت‌های شغلی</Link>
-                <Link
-                  to={
-                    "https://digikalapublic.whistleblowernetwork.net/frontpage"
-                  }
-                >
-                  گزارش تخلف در دیجی‌کالا
-                </Link>
-                <Link to={"https://www.digikala.com/page/contact-us/"}>
-                  تماس با دیجی‌کالا
-                </Link>
-                <Link to={"https://about.digikala.com/"}>درباره دیجی‌کالا</Link>
-              </Box>
-            </Box>
-          </Box>
+          <FooterGrid />
           <Box
             sx={{
               display: "flex",
@@ -340,7 +226,7 @@ function Footer() {
               alignItems: "center",
               justifyContent: "space-between",
               padding: "8px 20px",
-              width: "100%",
+            /*   width: "100%", */
               height: "76px",
               mb: "28px",
               borderRadius: "8px",
@@ -351,7 +237,7 @@ function Footer() {
               sx={{
                 display: "flex",
                 alignItems: "center",
-                width: "100%",
+          /*       width: "100%", */
                 maxWidth: "250px",
                 height: "44.1px",
               }}
@@ -371,8 +257,8 @@ function Footer() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "flex-end",
-                maxWidth: "831.96px",
-                width: "100%",
+                /* maxWidth: "831.96px",
+                width: "100%", */
                 height: "60px",
               }}
             >
@@ -383,7 +269,7 @@ function Footer() {
                   justifyContent: "flex-end",
                   flexWrap: "wrap",
                   maxWidth: "771.96px",
-                  width: "100%",
+              /*     width: "100%", */
                   height: "60px",
                 }}
               >

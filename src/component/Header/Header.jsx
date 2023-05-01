@@ -67,7 +67,7 @@ function Header() {
           width: "100%",
           height: "40px",
           fontSize: "12px",
-          borderBottom: "1px solid #5a5c7a",
+          borderBottom: "1px solid  #e0e0e6",
         }}
       >
         <Box
