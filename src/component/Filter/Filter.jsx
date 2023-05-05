@@ -26,8 +26,15 @@ id: 1,
       { title: "4.5G" },
       { title: "3G" },
     ], },
-  /* { title: "رنگ" },
-  { title: "محدوده قیمت" },
+  { title: "رنگ" ,
+  id: 2,
+    detail: [
+      { title: "مشکی" },
+      { title: "زرد" },
+      { title: "آبی" },
+      { title: "سفید" },
+    ],}
+  /* { title: "محدوده قیمت" },
   { title: "نوع فروشنده" },
   { title: "تعداد سیم کارت" },
   { title: "ویدیو" },
@@ -44,7 +51,7 @@ id: 1,
   { title: "سیستم عامل" },
   { title: "محافظت" },
   { title: "دسته ‌بندی" },
-  { title: "حافظه داخلی" }, */ 
+  { title: "حافظه داخلی" }, */  
 ];
 
 function Filter() {
@@ -98,11 +105,9 @@ function Filter() {
           >
             <Box sx={{display:"flex",
           justifyContent:"space-between"}}>
-
-            
-            <Typography>{item.title}</Typography>
+            <Typography>{item.title}</Typography> {open === item.title ? <ExpandLess /> : <ExpandMore />}</Box>
             <Box>
-              {open === item.title ? <ExpandLess /> : <ExpandMore />}</Box>
+             
               <Collapse in={open === item.title} timeout="auto" unmountOnExit>
                 <Box>
                   {item.detail.map((option, index) => (
