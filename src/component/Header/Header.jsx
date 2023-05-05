@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Badge, Box, Typography } from "@mui/material";
 import InputOutlinedIcon from "@mui/icons-material/InputOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import SearchIcon from "@mui/icons-material/Search";
@@ -55,7 +55,9 @@ function Header() {
             <Typography sx={{ ml: "10px" }}>ورود | ثبت نام</Typography>
           </Box>
           <Typography> | </Typography>
-          <ShoppingCartOutlinedIcon sx={{ ml: "7px" }} />
+          <Badge badgeContent={4} color="error">
+            <ShoppingCartOutlinedIcon sx={{ ml: "7px" }} />
+          </Badge>
         </div>
       </div>
       <Box

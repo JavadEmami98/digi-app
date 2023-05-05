@@ -3,8 +3,8 @@ import Banner from "../component/Banner/Banner";
 import Header from "../component/Header/Header";
 import { Box, Container, Divider, Typography } from "@mui/material";
 import MenuOpenOutlinedIcon from '@mui/icons-material/MenuOpenOutlined';
-import GridProdudct from "../component/GridProduct/GridProdudct";
-
+/* import GridProdudct from "../component/GridProduct/GridProdudct";
+ */
 function Products() {
   return (
     <div>
@@ -103,7 +103,7 @@ function Products() {
                 
               </Box>
             </Box>
-            <GridProdudct/>
+           {/*  <GridProdudct/> */}
           </Divider>
         </Box>
       </Container>

@@ -5,24 +5,24 @@ import CartProduct from "./CartProduct";
 function GridProdudct() {
   return (
     <div>
-      <Box sx={{ flexGrow: 1 , background:"black"}}>
-        <Grid container spacing={1} sx={{  }}>
-          <Grid item lg={3}>
+      <Box >
+        <Grid container spacing={0.2} >
+          <Grid item lg={3} sx={{border:"1px solid  #e0e0e6"}}>
             <CartProduct />
           </Grid>
-          <Grid item lg={3}>
+          <Grid item lg={3} sx={{border:"1px solid  #e0e0e6"}}>
           <CartProduct />
           </Grid>
-          <Grid item lg={3}>
+          <Grid item lg={3} sx={{border:"1px solid  #e0e0e6"}}>
           <CartProduct />
           </Grid>
-          <Grid item lg={3}>
+          <Grid item lg={3} sx={{border:"1px solid  #e0e0e6"}}>
+          <CartProduct />
+          </Grid >
+          <Grid item lg={3} sx={{border:"1px solid  #e0e0e6"}}>
           <CartProduct />
           </Grid>
-          <Grid item lg={3}>
-          <CartProduct />
-          </Grid>
-          <Grid item lg={3}>
+          <Grid item lg={3} sx={{border:"1px solid  #e0e0e6"}}>
           <CartProduct />
           </Grid>
         </Grid>

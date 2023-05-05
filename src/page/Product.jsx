@@ -2,31 +2,18 @@ import React from "react";
 import Banner from "../component/Banner/Banner";
 import Header from "../component/Header/Header";
 import { Box, Container, Typography } from "@mui/material";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import GridProdudct from "../component/GridProduct/GridProdudct";
+import { Sort } from "@mui/icons-material";
+import Filter from "../component/Filter/Filter";
 
-const names = [
-  { title: "رنگ" },
-  { title: "محدوده قیمت" },
-  { title: "نوع فروشنده" },
-  { title: "نوع" },
-  { title: "شبکه های ارتباطی" },
-  { title: "پشتیبانی از کارت حافظه" },
-  { title: "دوربین‌های پشت گوشی" },
-  { title: "تعداد سیم کارت" },
-  { title: "فن‌آوری موبایل" },
-  { title: "توضیحات سیم کارت" },
-  { title: "نوع پردازنده" },
-  { title: "فناوری فوکوس" },
-  { title: "قابلیت‌های نرم‌افزاری" },
-  { title: "ویژگی‌های خاص" },
-  { title: "موسیقی" },
-  { title: "ویدیو" },
-  { title: "فناوری صفحه‌نمایش" },
-  { title: "سیستم عامل" },
-  { title: "محافظت" },
-  { title: "دسته ‌بندی" },
-  { title: "حافظه داخلی" },
+
+
+const filter = [
+  { title: "مرتبط‌ ترین" },
+  { title: "پربازدیدترین" },
+  { title: "جدید ترین" },
+  { title: "ارزان ‌ترین" },
+  { title: "گران‌ ترین" },
 ];
 
 function Product() {
@@ -38,13 +25,16 @@ function Product() {
         <nav>
           <Box
             sx={{
+
               height: "66.04px",
               padding: "20px 0px",
-              display: "block",
-              background: "red",
+              display: "flex",
+           /*    background: "red", */
             }}
           >
-            swiper swiper swiper =
+   
+            <Typography sx={{ml:"5px"}}>فروشگاه اینترنتی دیجی‌کالا</Typography> /
+            <Typography sx={{mr:"5px"}}>موبایل</Typography>
           </Box>
         </nav>
         {/* Flex All */}
@@ -54,54 +44,45 @@ function Product() {
             flexDirection: "row",
             justifyContent: "space-between",
             width: "100%",
-            padding:"12px 0px"
+            padding: "12px 0px",
           }}
         >
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              border: "1px solid #e0e0e6",
-              borderRadius: "8px",
-              height: "auto",
-              padding: "16px 20px",
-              width: "20%",
-            }}
-          >
+          <Filter/>
+          <Box sx={{ display: "flex", flexDirection: "column" }}>
             <Box
               sx={{
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
-                flexDirection: "row",
-                width: "100%",
+                height: "50.04px",
               }}
             >
-              <Typography sx={{ fontSize: "18px" }}>فیلتر ها</Typography>
-              <Typography sx={{ color: "#19bfd3", fontSize: "14px" }}>
-                حذف فیلترها
-              </Typography>
+              <Box
+                sx={{
+                  display: "flex",
+         /*          background: "gray", */
+                  mr: "15px",
+                  gap: 2,
+                }}
+              >
+                <Box sx={{ display: "flex" }}>
+                  <Sort />
+                  <Typography sx={{ mr: "5px" }}>مرتب سازی: </Typography>
+                </Box>
+                <Typography sx={{ color: "#ef394e" }}>پرفروش‌ ترین‌</Typography>{" "}
+                {filter.map((item, index) => (
+                  <Typography key={index}>{item.title} </Typography>
+                ))}
+              </Box>
+              <Box
+                sx={{ display: "flex", alignItems: "center", fontSize: "12px" }}
+              >
+                <Typography sx={{ fontSize: "14px" }}>808 کالا</Typography>
+              </Box>
             </Box>
-            {names.map((item,index)=>(
-            <Box 
-            key={index}
-              sx={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                flexDirection: "row",
-                width: "100%",
-                padding: "20px 12px",
-                borderBottom: "1px solid #f1f2f4",
-              }}
-            >
-              <Typography>{item.title}</Typography>
-              <KeyboardArrowDownIcon sx={{ color: "#9e9fb1" }} />
-            </Box>))}
-          </Box>
-          <Box sx={{mr:"15px",mt:"12px"}}>
-            <GridProdudct />
+            <Box sx={{ mr: "15px", mt: "12px" }}>
+              <GridProdudct />
+            </Box>
           </Box>
         </Box>
       </Container>
