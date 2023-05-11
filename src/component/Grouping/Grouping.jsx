@@ -1,5 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
+import Grid from '@mui/material/Grid';
+import GpCart from "./GpCart";
 
 const twelvepic = [
   {
@@ -79,38 +81,26 @@ const twelvepic = [
 function Grouping() {
   return (
     <div>
-      <Typography sx={{ mt: "25px", mr: "670px", fontSize: "20px" }}>
-        دسته‌بندی‌های دیجی‌ کالا
-      </Typography>
       <Box
         sx={{
           display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          width: "1272px",
-          height: "441px",
-          mr: "122px",
-          mt: "40px",
+          justifyContent: "center",
+          alignItems: "center",
+          mt: "25px",
         }}
       >
-        {twelvepic.map((item, index) => (
-          <Box
-            key={index}
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "212px",
-              height: "205px",
-              backgroundColor: "#white",
-            }}
-          >
-            <img className="wrap-pic" src={item.image} alt="" />
-            <Typography sx={{ fontSize: "13px" }}>{item.title}</Typography>
-          </Box>
-        ))}
+        <Typography sx={{ fontSize: "20px", }}>
+          دسته‌بندی‌های دیجی‌ کالا
+        </Typography>
       </Box>
+      <Box sx={{ flexGrow: 1,mt:"10px" }}>
+      <Grid container spacing={1.25}>
+      {twelvepic.map((item, index) => (
+        <Grid key={index} item sm={4} xs={4}  md={4} lg={2} xl={2}>
+          <GpCart image={item.image} title={item.title}/>
+        </Grid>))}
+      </Grid>
+    </Box>
     </div>
   );
 }

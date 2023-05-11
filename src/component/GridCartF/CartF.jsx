@@ -8,8 +8,6 @@ function CartF({ title, image }) {
         sx={{
           display: "flex",
           flexDirection: "column",
-          width: "317px",
-          height: "279px",
           border: "1px solid #e0e0e6",
           borderRadius: "8px",
           overflow: "hidden",
@@ -18,7 +16,7 @@ function CartF({ title, image }) {
         <img className="pics-up-footer" src={image} alt="" loading="lazy" />
         <Box
           sx={{
-            width: "315.4",
+            width:"100%",
             height: "52.08",
             color: "#080a38",
             textAlign: "right",
@@ -26,7 +24,7 @@ function CartF({ title, image }) {
             margin: "8px 0px 12px",
           }}
         >
-          <Typography sx={{ fontSize: "12px" }}>{title}</Typography>
+          <Typography sx={{ fontSize: "12px",typography: "body2", }}>{title}</Typography>
         </Box>
       </Box>
     </div>

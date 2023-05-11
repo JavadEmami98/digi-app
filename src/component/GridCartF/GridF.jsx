@@ -28,10 +28,10 @@ const cartf = [
 function GridF() {
   return (
     <div>
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={0.5}>
+      <Box sx={{ flexGrow: 1,width:"100%",height:"100%"}}>
+        <Grid container spacing={1} style={{justifyContent:"center"}}>
           {cartf.map((item, index) => (
-            <Grid key={index} item lg={3} >
+            <Grid key={index} item lg={3} xl={3} md={3} sm={12} xs={12}>
               <CartF title={item.title} image={item.image} />
             </Grid>
           ))}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { Box, Typography } from "@mui/material";
 import RiceBowlIcon from "@mui/icons-material/RiceBowl";
 import AddTaskIcon from "@mui/icons-material/AddTask";
@@ -7,15 +7,14 @@ import ConfirmationNumberOutlinedIcon from "@mui/icons-material/ConfirmationNumb
 function DigiClub() {
   return (
     <div>
-        <Box
+      <Box
         sx={{
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          flexDirection: "row",
-          width: "1304px",
-          height: "87.2px",
-          mr: "122px",
+          flexDirection: {lg:"row",xl:"row",sm:"column",xs:"column",md:"column"},
+          /* width: "1304px", */
+         /*  height: "87.2px", */
           mt: "8px",
           padding: "12px 16px",
           borderRadius: "16px",
@@ -31,12 +30,13 @@ function DigiClub() {
         <Box
           sx={{
             display: "flex",
-            gap: "4px",
             overflow: "hidden",
-            width: "811.99px",
-            height: "63.2px",
+            maxWidth: {xs:"384px",sm:"384px",md:"384px",lg:"60%",xl:"60%"},
+            maxHeight: {xs:"126px",sm:"126px",md:"126px",lg:"63.2px",xl:"63.2px"},
             borderRadius: "8px",
             background: "white",
+            alignItems:"center",
+            mt:{xs:"8px",sm:"8px",md:"8px",lg:"0px",xl:"0px"}
           }}
         >
           <Box
@@ -45,18 +45,18 @@ function DigiClub() {
               alignItems: "center",
               justifyContent: "space-between",
               overflow: "hidden",
-              flexDirection: "row",
-              width: "273.19px",
-              height: "63.2px",
+              flexDirection:{xs:"column",sm:"column",md:"column",lg:"row",xl:"row"},
+              /* width: "273.19px", */
+            /*   height: "63.2px", */
             }}
           >
             <Box
               sx={{
                 display: "flex",
                 alignItems: "center",
-                flexDirection: "row",
-                width: "85.99px",
-                height: "26.4px",
+                flexDirection:{xs:"column",sm:"column",md:"column",lg:"row",xl:"row"},
+             /*    width: "85.99px", */
+                /* height: "26.4px", */
                 margin: "0px 16px 0px 0px",
               }}
             >
@@ -77,18 +77,18 @@ function DigiClub() {
               alignItems: "center",
               justifyContent: "space-between",
               overflow: "hidden",
-              flexDirection: "row",
-              width: "274.19px",
-              height: "63.2px",
+              flexDirection:{xs:"column",sm:"column",md:"column",lg:"row",xl:"row"},
+              /* width: "274.19px", */
+              /* height: "63.2px", */
             }}
           >
             <Box
               sx={{
                 display: "flex",
                 alignItems: "center",
-                flexDirection: "row",
-                width: "85.99px",
-                height: "26.4px",
+                flexDirection:{xs:"column",sm:"column",md:"column",lg:"row",xl:"row"},
+                /* width: "85.99px", */
+                /* height: "26.4px", */
                 margin: "0px 16px 0px 0px",
               }}
             >
@@ -109,19 +109,19 @@ function DigiClub() {
               alignItems: "center",
               justifyContent: "space-between",
               overflow: "hidden",
-              flexDirection: "row",
-              width: "256.5px",
-              height: "63.2px",
+              flexDirection:{xs:"column",sm:"column",md:"column",lg:"row",xl:"row"},
+          /*     width: "256.5px", */
+              /* height: "63.2px", */
             }}
           >
             <Box
               sx={{
                 display: "flex",
                 alignItems: "center",
-                flexDirection: "row",
-                width: "85.99px",
-                height: "26.4px",
-                margin: "0px 16px 0px 0px",
+                flexDirection:{xs:"column",sm:"column",md:"column",lg:"row",xl:"row"},
+          /*       width: "85.99px", */
+                /* height: "26.4px", */
+                /* margin: "0px 16px 0px 0px", */
               }}
             >
               <ConfirmationNumberOutlinedIcon
@@ -140,7 +140,7 @@ function DigiClub() {
         </Box>
       </Box>
     </div>
-  )
+  );
 }
 
-export default DigiClub
+export default DigiClub;

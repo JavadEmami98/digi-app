@@ -18,15 +18,6 @@ export default function Grid2() {
             <CartGrid title={item.title}/>
           </Grid>
           ))}
-          {/* <Grid item lg={3}>
-          <CartGrid/>
-          </Grid>
-          <Grid item lg={3}>
-          <CartGrid/>
-          </Grid>
-          <Grid item lg={3}>
-          <CartGrid/>
-          </Grid> */}
         </Grid>
       </Box>
     );

@@ -14,11 +14,10 @@ function DigiPlus() {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
-          width: "1304px",
+          /* width: "1304px", */
           height: "388px",
           border: "1px solid #e0e0e6",
           borderRadius: "16px",
-          mr: "122px",
           mt: "24px",
           backgroundColor: "#941b80",
           padding: "16px",

@@ -11,10 +11,9 @@ function Popular() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          width: "1304px",
+          /* width: "1304px", */
           height: "224px",
           flexDirection: "column",
-          mr: "122px",
           mt: "24px",
           border: "1px solid #e0e0e6",
           borderRadius: "16px",
@@ -25,8 +24,8 @@ function Popular() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            Maxwidth: "1304px",
-            width: "100%",
+            /* Maxwidth: "1304px", */
+          /*   width: "100%", */
             height: "44px",
             mt: "15px",
           }}

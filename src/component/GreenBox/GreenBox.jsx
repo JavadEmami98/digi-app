@@ -36,12 +36,12 @@ function GreenBox() {
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          flexDirection: "row",
+          flexDirection: {lg:"row",xl:"row",md:"row",sm:"column",xs:"column"},
           alignItems: "center",
-          width: "1304px",
-          height: "110px",
+          /* width: "1304px", */
+         /*  height: "110px", */
           backgroundColor: "#e2f0e2",
-          margin: "10px 110px",
+          marginTop: "5px",
           borderRadius: "15px",
         }}
       >
@@ -51,9 +51,10 @@ function GreenBox() {
             justifyContent: "space-between",
             flexDirection: "row",
             alignItems: "center",
-            width: "467px",
-            height: "62px",
-            mr: "25px",
+            columnGap:2
+          /*   width: "467px", */
+     /*        height: "62px", */
+       /*      mr: "25px", */
           }}
         >
           <img
@@ -66,7 +67,8 @@ function GreenBox() {
           />
           <Typography
             sx={{
-              width: "111px",
+              /* width: "111px", */
+              display:{md:"none",sm:"none",xs:"none",lg:"block",xl:"block"},
               height: "28px",
               backgroundColor: "#39ae00",
               color: "white",
@@ -85,10 +87,11 @@ function GreenBox() {
             flexDirection: "row",
             alignItems: "center",
             justifyContent: "space-between",
-            width: "492px",
+            columnGap:0.5,
+           /*  width: "492px", */
             height: "74px",
             /* backgroundColor: "white", */
-            mr: "95px",
+         /*    mr: "95px", */
           }}
         >
           {product.map((item, index) => (
@@ -100,8 +103,8 @@ function GreenBox() {
                 justifyContent: "center",
                 flexDirection: "column",
                 alignItems: "center",
-                width: "74px",
-                height: "74px",
+                maxwidth: "74px",
+                maxheight: "74px",
                 backgroundColor: "white",
                 borderRadius: "50%",
               }}
@@ -132,7 +135,8 @@ function GreenBox() {
 
         <Box
           sx={{
-            display: "flex",
+            display: {xl:"flex",lg:"flex",md:"flex",xs:"none",
+          sm:"none"},
             justifyContent: "space-between",
             flexDirection: "row",
             alignItems: "center",
@@ -149,6 +153,16 @@ function GreenBox() {
           <ArrowBackOutlinedIcon />
         </Box>
       </Box>
+
+      {/* Mobile */}
+      {/* <Box sx={{
+        display:"flex",
+        flexDirection:"column",
+        backgroundColor: "#e2f0e2",
+
+      }}>
+
+      </Box> */}
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
+
 
 const CATEGROY = [
   {
@@ -62,42 +63,42 @@ const CATEGROY = [
 function Categories() {
   return (
     <div>
-      <Box
-        sx={{
-          display: "flex",
-          width: "94%",
-          height: "150px",
-          margin: "5px 50px",
-        }}
-      >
-        {CATEGROY.map((item, index) => (
-          <Box
-            key={index}
-            sx={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              flexDirection: "column",
-              width: "105px",
-              height: "115px",
-              margin: "20px 20px",
-              paddingTop: "5px",
-              paddingBottom: "5px",
-              fontWeight: "light",
-            }}
-          >
-            <img
-              className="smalls-pic"
-              src={item.image}
-              alt=""
-              loading="lazy"
-            />
-            <Typography sx={{ fontSize: "11px", fontWeight: "light" }}>
-              {item.title}
-            </Typography>
-          </Box>
-        ))}
-      </Box>
+      <Container maxWidth="xl">
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
+          {CATEGROY.map((item, index) => (
+            <Box
+              key={index}
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                flexDirection: "column",
+                height: "115px",
+                margin: "20px 20px",
+                paddingTop: "5px",
+                paddingBottom: "5px",
+                typography: "body2",
+              }}
+            >
+              <img
+                className="smalls-pic"
+                src={item.image}
+                alt=""
+                loading="lazy"
+              />
+              <Typography sx={{ fontSize: "11px", typography: "body2", }}>
+                {item.title}
+              </Typography>
+            </Box>
+          ))}
+        </Box>
+        
+      </Container>
     </div>
   );
 }

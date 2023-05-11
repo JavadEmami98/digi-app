@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "./Swiper2.css";
 import { Pagination } from "swiper";
 import Cart from "../Cart/Cart";
-import { Box } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 
 const cart = [
   {
@@ -74,23 +74,26 @@ const cart = [
 ];
 
 export default function Swiper2() {
+  const isMd = useMediaQuery("(min-width:900px)");
   return (
-    <Box sx={{background:"#ef4056" , my:6 , py:4 , px:5}}>
+    <Box sx={{background:"#ef4056" , my:6  ,borderRadius:"15px"}}>
       <Swiper
-        slidesPerView={6}
+        slidesPerView={isMd ? 6 : 3}
         spaceBetween={2}
-    /*     centeredSlides={true} */
+        /* centeredSlides={true}  */
         pagination={{
           clickable: true,
         }}
         modules={[Pagination]}
         className="swiper2"
+       
       >
         <SwiperSlide className="swiper-slide2">
           <img
             src="https://api.tahlilmobile.ir/public/downloadFileById/657"
             alt=""
-            style={{width:"100%" , objectFit:"cover" , height:"100%" , maxHeight:"280px",background:"#ef4056"}}
+            style={{width:"100%" , objectFit:"cover" , height:"100%" , maxHeight:"280px",background:"#ef4056",
+        padding:"5px 15px"}}
           />
         </SwiperSlide>
 

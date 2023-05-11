@@ -12,7 +12,7 @@ function CartGrid({title}) {
         sx={{
           display: "flex",
           flexDirection: "column",
-          width: "325px",
+          /* width: "325px", */
           height: "418px",
           background: "red",
           padding: "8px 20px",

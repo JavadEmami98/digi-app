@@ -57,7 +57,7 @@ function Footer() {
                 justifyContent: "center",
                 alignItems: "center",
                 padding: "8px 16px",
-                width: "137.81px",
+              /*   width: "137.81px", */
                 height: "40px",
                 border: "1px solid #e0e0e6",
                 borderRadius: "8px",
@@ -89,7 +89,7 @@ function Footer() {
               mt: "12px",
               mb: "4px",
               flexWrap: "nowrap",
-              width: "1160",
+              /* width: "1160", */
               height: "26.04px",
               color: "#3f4064",
             }}

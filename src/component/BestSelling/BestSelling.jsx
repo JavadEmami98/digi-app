@@ -12,10 +12,9 @@ function BestSelling() {
           display: "flex",
           flexDirection: "column",
           alignContent: "center",
-          width: "1304px",
+         /*  width: "1304px", */
           height: "403.7px",
           mt: "24px",
-          mr: "122px",
           padding: "16px 0px",
           border: "1px solid #e0e0e6",
           borderRadius: "16px",
@@ -51,11 +50,11 @@ function BestSelling() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              position: "absolute",
-              width: "92.53",
+              position: "relative",
+              /* width: "92.53", */
               height: "30.1",
               pl: "16px",
-              left: "0px",
+              right: "330px",
               top: "0px",
               color: "#19bfd3",
             }}

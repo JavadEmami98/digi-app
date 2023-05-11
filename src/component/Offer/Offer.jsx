@@ -8,10 +8,9 @@ function Offer() {
     <div>
       <Box
         sx={{
-          width: "1304px",
+       /*    width: "1304px", */
           height: "910.69px",
           mt: "24px",
-          mr: "122px",
           border: "1px solid #e0e0e6",
           borderRadius: "16px",
           padding: "0px 12px 12px",
@@ -22,7 +21,6 @@ function Offer() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            width: "1278px",
             height: "76.1px",
             margin: "0px 0px 8px",
             padding: "16px 0px",

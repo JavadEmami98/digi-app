@@ -9,7 +9,6 @@ function CartProduct() {
       <Box
         sx={{
           width: "100%",
-          height: "451.28px",
           display: "block",
           padding: "12px 8px",
           overflow: "hidden",
@@ -34,7 +33,6 @@ function CartProduct() {
               flexGrow: 1,
               flexDirection: "column",
               position: "relative",
-              height: "400px",
               background: "white",
             }}
           >
@@ -45,21 +43,20 @@ function CartProduct() {
                 flexDirection: "column",
                 alignItems: "stretch",
                 marginBottom: "4px",
-                height: "240px",
                 padding: "15px 15px",
               }}
             >
               <img
                 className="g-product-img"
-                src="https://dkstatics-public.digikala.com/digikala-products/373cf0add6b2964b30a9a59b2ce2f5f2c8ea976f_1678188426.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80"
+                src="https://dkstatics-public.digikala.com/digikala-products/004b2ef1e85f619e9332b096626ff33cbfa44d9f_1634457491.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80"
                 alt=""
+                style={{width:"100%",height:"100%",maxHeight:"200px"}}
               />
               <Box
                 sx={{
                   display: "flex",
                   justifyContent: "flex-start",
                   alignItems: "center",
-                  height: "28.8px",
                   mb: "4px",
                 }}
               >
@@ -67,7 +64,6 @@ function CartProduct() {
                   sx={{
                     display: "flex",
                     alignItems: "center",
-                    height: "23.3px",
                     cursor: "pointer",
                     borderRadius: "12px",
                     padding: "0px 12px",
@@ -91,16 +87,13 @@ function CartProduct() {
                 </Box>
               </Box>
               <Typography sx={{ fontSize: "14px", color: "#3f4064" }}>
-                گوشی موبایل سامسونگ مدل Galaxy A14 دو سیم کارت ظرفیت 64 گیگابایت
-                و رم 4 گیگابایت
+              گوشی موبایل اپل مدل iPhone 13 Pro Max A2644 دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 6 گیگابایت - اکتیو
               </Typography>
               <Box
                 sx={{
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "center",
-                  maxWidth: "283px",
-                  height: "26.04px",
                   mb: "4px",
                 }}
               >

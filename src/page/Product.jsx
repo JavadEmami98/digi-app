@@ -6,8 +6,6 @@ import GridProdudct from "../component/GridProduct/GridProdudct";
 import { Sort } from "@mui/icons-material";
 import Filter from "../component/Filter/Filter";
 
-
-
 const filter = [
   { title: "مرتبط‌ ترین" },
   { title: "پربازدیدترین" },
@@ -21,20 +19,20 @@ function Product() {
     <div>
       <Banner />
       <Header />
-      <Container maxWidth="100%">
+      <Container maxWidth="xl">
         <nav>
           <Box
             sx={{
-
               height: "66.04px",
               padding: "20px 0px",
               display: "flex",
-           /*    background: "red", */
+              /*    background: "red", */
             }}
           >
-   
-            <Typography sx={{ml:"5px"}}>فروشگاه اینترنتی دیجی‌کالا</Typography> /
-            <Typography sx={{mr:"5px"}}>موبایل</Typography>
+            <Typography sx={{ ml: "5px" }}>
+              فروشگاه اینترنتی دیجی‌کالا
+            </Typography>
+            /<Typography sx={{ mr: "5px" }}>موبایل</Typography>
           </Box>
         </nav>
         {/* Flex All */}
@@ -47,7 +45,10 @@ function Product() {
             padding: "12px 0px",
           }}
         >
-          <Filter/>
+          <Box sx={{ display: { md: "block", xs: "none" } }}>
+            <Filter />
+          </Box>
+
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <Box
               sx={{
@@ -59,8 +60,8 @@ function Product() {
             >
               <Box
                 sx={{
-                  display: "flex",
-         /*          background: "gray", */
+                  display: { md: "flex", xs: "none" },
+                  /*          background: "gray", */
                   mr: "15px",
                   gap: 2,
                 }}

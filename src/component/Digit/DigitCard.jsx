@@ -1,9 +1,7 @@
+import { Box, Typography } from "@mui/material";
 import React from "react";
-import Grid from "@mui/material/Grid";
-import DigitCard from "./DigitCard";
-import { Box } from "@mui/material";
 
-const digit = [
+/* const digit = [
   {
     title: "جی‌ کالا جت",
     image:
@@ -48,33 +46,52 @@ const digit = [
   },
   {
     title: "  بیشتر",
-    image: "https://icon-library.com/images/more-icon/more-icon-13.jpg",
+    image:
+      "https://dkstatics-public.digikala.com/digikala-bellatrix/967cbaa25713ca4d0e58cb5aaf0e486ab986d460_1648898393.png",
     id: 7,
   },
-];
+]; */
 
-function Digit() {
+function DigitCard({title, image}) {
   return (
     <div>
-      <Box sx={{ flexGrow: 1, justifyContent: "space-between", width: "100%" }}>
-        <Grid
-          container
-          spacing={0.25}
-          sx={{
-            width: "100%",
-            mt: { xs: "20px", sm: "20px" },
-            justifyContent: "space-between",
-          }}
-        >
-          {digit.map((item, index) => (
-            <Grid item lg={1} xl={1} xs={3}>
-              <DigitCard key={index} title={item.title} image={item.image} />
-            </Grid>
-          ))}
-        </Grid>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+           justifyContent: "space-between",
+        
+          width:"100%"
+        }}
+      >
+        
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              flexDirection: "column",
+             width:"100%",
+              height: "79px",
+              marginTop: "20px",
+              paddingBottom: "5px",
+              fontWeight: "light",
+            }}
+          >
+            <img
+              className="smalls-pics"
+              src={image}
+              alt=""
+              loading="lazy"
+            />
+            <Typography sx={{ fontSize: "10px", fontWeight:100 }}>
+              {title}
+            </Typography>
+          </Box>
+       
       </Box>
     </div>
   );
 }
 
-export default Digit;
+export default DigitCard;

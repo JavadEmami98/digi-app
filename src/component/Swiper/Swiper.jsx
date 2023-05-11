@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import "./Swiper.css";
+import { Box, Container } from "@mui/material";
 
 // import required modules
 
@@ -15,7 +16,9 @@ import "./Swiper.css";
 export default function SwiperHeader() {
   return (
     <>
-      <Swiper
+    <Container maxWidth="xl">
+      <Box sx={{mt: {xs:"10px"}}}>
+        <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
@@ -78,7 +81,7 @@ export default function SwiperHeader() {
             loading="lazy"
           />
         </SwiperSlide>
-      </Swiper>
+      </Swiper></Box></Container>
     </>
   );
 }

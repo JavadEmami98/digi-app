@@ -21,9 +21,8 @@ function TwoPics() {
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "space-between",
-          width: "1304px",
+          /* width: "1304px", */
           height: "258px",
-          mr: "122px",
         }}
       >
         {twopic.map((item, index) => (
