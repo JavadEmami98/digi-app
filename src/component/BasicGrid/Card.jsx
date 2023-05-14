@@ -12,9 +12,8 @@ function Card({ title, image }) {
           alignItems: "center",
           flexDirection: "column",
           /* background: "green", */
-         width: "186px",
-          height: "155px"
-          
+          width: "186px",
+          height: "155px",
         }}
       >
         <Box
@@ -26,6 +25,7 @@ function Card({ title, image }) {
             height: "84px", */
             background: "white",
             borderRadius: "50%",
+            
           }}
         >
           <img className="grid-7" src={image} alt="" />

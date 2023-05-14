@@ -1,11 +1,5 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css/grid";
-import "swiper/css/pagination";
-import './BasicSwiper.css'
-import { Grid, Pagination } from "swiper";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
 import Card from "./Card";
 
 const card = [
@@ -71,63 +65,20 @@ const card = [
   },
 ];
 
-function BasicSwiper() {
-  return <div>
-     <Swiper
-        slidesPerView={7}
-        grid={{
-          rows: 2,
-        }}
-        spaceBetween={5}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Grid, Pagination]}
-        className="swiper5"
-        style={{ width:"100%", height: "315px", mt: "10px",border: "1px solid #e0e0e6", borderRadius:"16px"}}
+export default function BasicGrid() {
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid
+        container
+        spacing={0}
+        sx={{maxWidth: "1304px", height: "315px", mt: "10px",border: "1px solid #e0e0e6", borderRadius:"16px",overflow:{xs:"auto",sm:"auto",md:"auto"}}}
       >
         {card.map((item, index) => (
-        <SwiperSlide key={index}  className="swiper-slide5">
-      <Card  title={item.title} image={item.image} />
-    
-        </SwiperSlide>
-        ))}
-      {/* <SwiperSlide  className="swiper-slide5">Slide 6</SwiperSlide>
-        <SwiperSlide  className="swiper-slide5">Slide 7</SwiperSlide>
-        <SwiperSlide  className="swiper-slide5">Slide 8</SwiperSlide>
-        <SwiperSlide  className="swiper-slide5">Slide 9</SwiperSlide>
-        <SwiperSlide  className="swiper-slide5">Slide 7</SwiperSlide>
-        <SwiperSlide  className="swiper-slide5">Slide 8</SwiperSlide>
-        <SwiperSlide  className="swiper-slide5">  Slide 9</SwiperSlide>
-        <SwiperSlide  className="swiper-slide5">Slide 7</SwiperSlide>
-        <SwiperSlide  className="swiper-slide5">Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide> */}
-      </Swiper>
-  </div>;
+          <Grid item lg={2} xs={2} sm={2} md={2} xl={2} key={index}>
+            <Card title={item.title} image={item.image} />
+          </Grid>
+        ))}  
+      </Grid>
+    </Box>
+  );
 }
-
-export default BasicSwiper;

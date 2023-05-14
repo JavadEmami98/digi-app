@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import BasicSwiper from "../BasicSwiper/BasicSwiper";
+import BasicGrid from "../BasicGrid/BasicGrid";
+
 
 
 function Suggestion() {
@@ -12,7 +13,7 @@ function Suggestion() {
         <Typography sx={{ fontSize: "20px" }}>پیشنهاد دیجی‌ کالا</Typography>
       </Box>
 
-      <BasicSwiper />
+      <BasicGrid />
     </div>
   );
 }

@@ -1,38 +1,33 @@
 import { Box, Typography } from "@mui/material";
-import GridPurple from "../GridPurple/GridPurple";
-import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
-import RocketOutlinedIcon from "@mui/icons-material/RocketOutlined";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import React from "react";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import RocketOutlinedIcon from "@mui/icons-material/RocketOutlined";
+import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
+import GirdPurpleMobile from "../GridPurpleMobile/GirdPurpleMobile";
 
-function DigiPlus() {
+function DigiPlusMobile() {
   return (
     <div>
       <Box
         sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: "column",
           justifyContent: "space-between",
-          /* width: "1304px", */
-          height: "388px",
-          border: "1px solid #e0e0e6",
-          borderRadius: "16px",
-          mt: "24px",
+          width: "100%",
           backgroundColor: "#941b80",
-          padding: "16px",
+          paddingTop: "24px",
+          mt: "16px",
+          height: "738px",
         }}
       >
         <Box
           sx={{
             display: "flex",
+            justifyContent: "flex-start",
+            alignItems: "flex-start",
             flexDirection: "column",
-            justifyContent: "start",
-            alignItems: "start",
-            width: "392px",
-            height: "114px",
-            pr: "24px",
-            pt: "24px",
-            zIndex: 10,
+            pr: "12px",
+            minHeight: "355px",
           }}
         >
           <img
@@ -67,12 +62,13 @@ function DigiPlus() {
           sx={{
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
-            width: "868px",
-            height: "356px",
-            backgroundColor: "white",
-            padding: "0px 16px",
+            justifyContent: "space-between",
+            bgcolor: "#fff",
+            height: "327px",
+            p: "0px 12px",
             borderRadius: "8px",
+            overflow: "hidden",
+            margin: "7px 7px",
           }}
         >
           <Box
@@ -80,25 +76,16 @@ function DigiPlus() {
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
-              width: "868px",
-              height: "66.4px",
-              padding: "16px 10px",
+              height: "52px",
+              flexDirection: "row",
+              padding:"12px 0px"
             }}
           >
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                flexDirection: "row",
-                height: "35px",
-                margin: "0px 0px 0px 16px",
-              }}
-            >
+            <Box sx={{ display: "flex", alignItems: "center", height: "52" }}>
               <RocketOutlinedIcon
                 sx={{ color: "#a63489", height: "24px", ml: "5px" }}
               />
-              <Typography sx={{ fontSize: "18px" }}>
+              <Typography sx={{ fontSize: "14px" }}>
                 ارسال فوری رایگان
               </Typography>
             </Box>
@@ -106,26 +93,23 @@ function DigiPlus() {
               sx={{
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "space-between",
-                flexDirection: "row",
-                height: "36px",
-                color: "#a63489",
-                padding: "0px 7px",
+                height: "52",
+                color: "#b12ba4",
               }}
             >
-              <Typography sx={{ fontSize: "14px" }}>مشاهده همه</Typography>
+              <Typography sx={{ fontSize: "14px", color: "#b12ba4" }}>
+                مشاهده همه
+              </Typography>
               <ArrowBackIosIcon sx={{ fontSize: "small" }} />
             </Box>
           </Box>
           <Box
             sx={{
               display: "flex",
-              width: "850px",
-              height: "404px",
-              mb: "12px",
+              height: "273pxpx",
             }}
           >
-            <GridPurple />
+            <GirdPurpleMobile />
           </Box>
         </Box>
       </Box>
@@ -133,4 +117,34 @@ function DigiPlus() {
   );
 }
 
-export default DigiPlus;
+export default DigiPlusMobile;
+
+{
+  /* <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              height: "52px",
+              flexDirection: "row",
+            }}
+          >
+            <RocketOutlinedIcon
+              sx={{ color: "#a63489", height: "24px", ml: "5px" }}
+            />
+            <Typography sx={{ fontSize: "18px" }}>ارسال فوری رایگان</Typography>
+          
+            <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              height: "52px",
+              flexDirection: "row",
+            }}
+          >
+            <Typography sx={{ fontSize: "12px" }}>مشاهده همه</Typography>
+            <ArrowBackIosIcon sx={{ fontSize: "small" }} />
+          </Box>
+          </Box> */
+}

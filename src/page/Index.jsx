@@ -10,9 +10,9 @@ import Digit from "../component/Digit/Digit";
 import GreenBox from "../component/GreenBox/GreenBox";
 import Grouping from "../component/Grouping/Grouping";
 import TwoPics from "../component/TwoPics/TwoPics";
-/* import Suggestion from "../component/Suggestion/Suggestion"; */
+import Suggestion from "../component/Suggestion/Suggestion";
 import Popular from "../component/Popular/Popular";
-/* import DigiPlus from "../component/DigiPlus/DigiPlus"; */
+import DigiPlus from "../component/DigiPlus/DigiPlus";
 import DigiClub from "../component/DigiClub/DigiClub";
 /* import Footer from "../component/Footer/Footer"; */
 import Reading from "../component/Reading/Reading";
@@ -23,6 +23,7 @@ import HeaderMobile from "../component/HeaderMobile/HeaderMobile";
 import SearchMobile from "../component/SearchMobile/SearchMobile";
 import LocMobile from "../component/LocationMobile/LocMobile";
 import GridFour from "../component/FourPics/GridFour";
+import DigiPlusMobile from "../component/DigiPlusMobile/DigiPlusMobile";
 
 const twopics = [
   {
@@ -64,7 +65,7 @@ function Index() {
         <Grouping /> 
         <TwoPics />
 
-        {/*  <Suggestion />  */}
+        <Suggestion /> 
         <Popular />
 
       {/*   <Box
@@ -95,7 +96,13 @@ function Index() {
         >
           <Grid2 />
         </Box> */}
-        {/*   <DigiPlus /> */}
+        <Box sx={{display:{xs:"none",sm:"none",md:"none",lg:"block",xl:"block"}}}>
+            <DigiPlus />
+        </Box>
+        <Box sx={{display:{xs:"block",sm:"block",md:"block",lg:"none",xl:"none"}}}>
+           <DigiPlusMobile/>
+        </Box>
+       
         <DigiClub />
 
         {/* <Box

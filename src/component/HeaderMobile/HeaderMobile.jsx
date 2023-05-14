@@ -15,6 +15,7 @@ function HeaderMobile() {
           paddingBottom: "12px",
           paddingTop: "12px",
           borderBottom: "1px solid #f1f2f4",
+          width:"100%"
         }}
       >
         <HamMenu />
