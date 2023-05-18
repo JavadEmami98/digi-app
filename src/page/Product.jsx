@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Banner from "../component/Banner/Banner";
 import Header from "../component/Header/Header";
 import { Box, Container, Typography } from "@mui/material";
@@ -7,14 +7,16 @@ import { Sort } from "@mui/icons-material";
 import Filter from "../component/Filter/Filter";
 
 const filter = [
-  { title: "مرتبط‌ ترین" },
-  { title: "پربازدیدترین" },
-  { title: "جدید ترین" },
-  { title: "ارزان ‌ترین" },
-  { title: "گران‌ ترین" },
+  { title: "پرفروش‌ ترین‌", id: 7 },
+  { title: "مرتبط‌ ترین", id: 0 },
+  { title: "پربازدیدترین", id: 1 },
+  { title: "جدید ترین", id: 2 },
+  { title: "ارزان ‌ترین", id: 3 },
+  { title: "گران‌ ترین", id: 4 },
 ];
 
 function Product() {
+  const [active, setActive] = useState(7);
   return (
     <div>
       <Banner />
@@ -70,9 +72,16 @@ function Product() {
                   <Sort />
                   <Typography sx={{ mr: "5px" }}>مرتب سازی: </Typography>
                 </Box>
-                <Typography sx={{ color: "#ef394e" }}>پرفروش‌ ترین‌</Typography>{" "}
                 {filter.map((item, index) => (
-                  <Typography key={index}>{item.title} </Typography>
+                  <Typography
+                  sx={{cursor:"pointer"}}
+                    key={index}
+                    id="7"
+                    onClick={() => setActive(item.id)}
+                    className={` ${active === item.id ? "red" : "black"}`}
+                  >
+                    {item?.title}
+                  </Typography>
                 ))}
               </Box>
               <Box

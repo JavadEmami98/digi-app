@@ -25,6 +25,7 @@ import Person4OutlinedIcon from '@mui/icons-material/Person4Outlined';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
+import ModalImage from "../component/ModalImage/ModalImage";
 
 const list = [
   {title:"فناوری صفحه نمایش : ",
@@ -40,6 +41,8 @@ p:"دفترچه‌ راهنما، کابل Lightning"},
 ]
 
 const slist = [{title:"۲,۰۳۳,۳۳۳ تومان پیش پرداخت"},{title:"۱,۸۸۱,۵۰۰ تومان ماهانه (۱۲ قسط)"},{title:"اعتبار تا سقف ۲۰,۰۰۰,۰۰۰ تومان"}]
+
+
 
 function Item() {
   return (
@@ -88,8 +91,14 @@ function Item() {
                 <CompareIcon />
                 <TocIcon />
             </Box>
-            <Box sx={{display:"flex",alignItems:"center",mt:"15px"}}>
+            <Box sx={{display:"flex",alignItems:"center",mt:"15px",flexDirection:"column"}}>
                 <img src="https://dkstatics-public.digikala.com/digikala-products/dcd6e4e843bea3f070614a95d27b1181fdf23008_1675774247.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90" alt="" style={{width:"auto",height:"auto",maxHeight:"495px",maxWidth:"495px"}}/>
+              
+             <ModalImage/>
+             <Box sx={{display:"flex",height:"26.04px",width:"100%",alignItems:"center"}}>
+             <ErrorOutlineIcon sx={{color:"#81858b",ml:"8px",p:"4px"}}/>
+             <Typography sx={{color:"#767790",ml:"8px",fontSize:"10px"}}>گزارش نادرستی مشخصات</Typography>
+             </Box>
             </Box>
             <Box sx={{display:"flex",width:"100%",height:"78px",flexDirection:"column"}}>
             <Box sx={{display:"flex",alignItems:"center",height:"30px",color:"#19bfd3"}}>
@@ -156,7 +165,7 @@ function Item() {
             </Box>
              <Box sx={{display:"flex",height:"78px",margin:"12px 0px"/* ,width:"565px" */}}>
                 <ErrorIcon sx={{color:"#81858b",mt:"4px",p:"2px"}}/>
-                <Typography sx={{mr:"8px",color:"#767790",fontSize:"13px"}}>امکان برگشت کالا در گروه موبایل با دلیل "انصراف از خرید" تنها در صورتی مورد قبول است که پلمب کالا باز نشده باشد.
+                <Typography sx={{mr:"8px",color:"#767790",fontSize:"12.5px"}}>امکان برگشت کالا در گروه موبایل با دلیل "انصراف از خرید" تنها در صورتی مورد قبول است که پلمب کالا باز نشده باشد.
 تمام گوشی‌های دیجی‌کالا ضمانت رجیستری دارند. در صورت وجود مشکل رجیستری، می‌توانید بعد از مهلت قانونی ۳۰ روزه، گوشی خریداری‌شده را مرجوع کنید.</Typography>
              </Box>
              <Box sx={{display:"flex",mt:"20px",height:"60px",border:"1px solid #e0e0e6",borderRadius:"8px",justifyContent:"space-between",alignItems:"center"}}>
@@ -253,14 +262,13 @@ function Item() {
                 <ArrowBackIosNewIcon sx={{p:"4px",color:"#9e9fb1"}}/>
             </Box>
             <Box sx={{display:"flex",alignItems:"center",justifyContent:"flex-end",height:"24px",mt:"8px",cursor:"pointer"}}>
-              <Typography sx={{color:"#9e9fb1",fontSize:"13px"}}>قیمت بهتری سراغ دارید؟</Typography>
-              <LocalOfferOutlinedIcon sx={{mr:"8px", p:"3px",color:"#9e9fb1"}}/>
+              <Typography sx={{color:"#9e9fb1",fontSize:"10px"}}>قیمت بهتری سراغ دارید؟</Typography>
+              <LocalOfferOutlinedIcon sx={{mr:"8px", p:"4px",color:"#9e9fb1"}}/>
             </Box>
             </Box>
         </Box>
             </Box>
         </Box>
-
       </Container>
     </div>
   );
