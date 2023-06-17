@@ -26,6 +26,12 @@ import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
 import ModalImage from "../component/ModalImage/ModalImage";
+import HeaderMobile from "../component/HeaderMobile/HeaderMobile";
+import SearchMobile from "../component/SearchMobile/SearchMobile";
+import LocMobile from "../component/LocationMobile/LocMobile";
+import ItemSwiperMobile from "../component/ItemSwiperMobile/ItemSwiperMobile";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const list = [
   {title:"فناوری صفحه نمایش : ",
@@ -45,9 +51,15 @@ const slist = [{title:"۲,۰۳۳,۳۳۳ تومان پیش پرداخت"},{title:
 
 
 function Item() {
+  const showToastMessage = () => {
+    toast.success('با موفقیت انجام شد !', {
+        position: toast.POSITION.TOP_RIGHT
+    });
+};
   return (
     <div>
-      <Banner />
+      <Box sx={{ display: { md: "none", xs: "none",sm:"none",lg:"block",xl:"block"}}}>
+         <Banner />
       <Header />
       <Container maxWidth="xl">
         <Box
@@ -251,8 +263,10 @@ function Item() {
                     </Box>
                     </Box>
                     <Typography sx={{padding:"0px 16px",mb:"12px",color:"#ef4056",fontSize:"14px"}}>تنها ۲ عدد در انبار دیجی‌کالا باقی مانده</Typography>
-                    
-                        <Button variant="contained" sx={{background:"#ef4056",margin:"16px 16px",height:"40px"}}>افزودن به سبد</Button>   
+                 
+                         <Button onClick={showToastMessage} variant="contained" sx={{background:"#ef4056",margin:"16px 16px",height:"40px"}}>افزودن به سبد</Button>   
+                       
+                
             </Box>
             <Box sx={{display:"flex",justifyContent:"space-between",height:"44px",border:"1px solid #f1f2f4",borderRadius:"4px",padding:"8px 20px",mt:"8px",mr:"12px",width:"100%"}}>
                 <Box sx={{display:"flex",alignItems:"center"}}>
@@ -270,6 +284,32 @@ function Item() {
             </Box>
         </Box>
       </Container>
+      </Box>
+      <Container maxWidth="xl">
+        <Box sx={{ display: { md: "block", xs: "block",sm:"block",lg:"none",xl:"none"}}}>
+      <HeaderMobile/>
+        <SearchMobile/>
+        <LocMobile/>
+        <Box sx={{display:"flex",height:"40px",alignItems:"center",p:"8px 4px"}}>
+          <Typography sx={{color:"#767790",fontSize:"12.5px"}}>دیجی‌کالا</Typography>
+          <Typography sx={{color:"#767790",m:"0px 12px"}}>/</Typography>
+          <Typography sx={{color:"#767790",fontSize:"12.5px"}}>موبایل</Typography>
+          <Typography sx={{color:"#767790",m:"0px 12px"}}>/</Typography>
+          <Typography sx={{color:"#767790",fontSize:"12.5px"}}>گوشی موبایل</Typography>
+        </Box>
+        <Box sx={{display:"flex",alignItems:"center",height:"24px",p:"0px 4px",m:"20px 0px",color:"#3f4064",justifyContent:"flex-end"}}>
+                <FavoriteBorderIcon sx={{mr:"24px"}}/>
+                <ShareIcon sx={{mr:"24px"}}/>
+                <NotificationsActiveOutlinedIcon sx={{mr:"24px"}}/>
+                <ShowChartIcon sx={{mr:"24px"}}/>
+                <CompareIcon sx={{mr:"24px"}}/>
+                <TocIcon sx={{mr:"24px"}}/>
+        </Box>
+        <ItemSwiperMobile/>
+      </Box>
+      </Container>
+      
+     
     </div>
   );
 }

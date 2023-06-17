@@ -23,17 +23,6 @@ const images = [
   },
 ];
 
-const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
-};
 
 function ModalImage() {
   const [open, setOpen] = React.useState(false);
@@ -41,7 +30,7 @@ function ModalImage() {
   const handleClose = () => setOpen(false);
   return (
     <div>
-      <Box
+       <Box
         sx={{
           display: "flex",
           alignItems: "center",
@@ -55,7 +44,6 @@ function ModalImage() {
       >
         {images.map((item, index) => (
           <Box
-            
             key={index}
             sx={{
               display: "flex",
@@ -67,19 +55,34 @@ function ModalImage() {
               flexDirection: "row",
             }}
           >
-            <img onClick={handleOpen} src={item.img} alt="" style={{ maxWidth: "72px" }} />
-            
+            <img
+              onClick={handleOpen}
+              src={item.img}
+              alt=""
+              style={{ maxWidth: "72px" }}
+            />
           </Box>
         ))}
-      
-      </Box>  <Modal
-              open={open}
-              onClose={handleClose}
-            >
-              <Box>
-               <SwiperModal/>
-              </Box>
-        </Modal>
+      </Box>
+      <Modal open={open} onClose={handleClose}>
+        <Box
+          sx={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: "100%",
+            bgcolor: "background.paper",
+            borderRadius: 2,
+            maxWidth: "800px",
+            p: 2,
+            border: "none",
+            outline: "none",
+          }}
+        >
+          <SwiperModal />
+        </Box>
+      </Modal>
     </div>
   );
 }

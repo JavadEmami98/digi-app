@@ -12,8 +12,7 @@ function HeaderMobile() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          paddingBottom: "12px",
-          paddingTop: "12px",
+          padding:"12px 0px",
           borderBottom: "1px solid #f1f2f4",
           width:"100%"
         }}

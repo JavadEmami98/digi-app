@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import FmdGoodIcon from "@mui/icons-material/FmdGood";
+import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import React from "react";
 
@@ -11,8 +11,9 @@ function LocMobile() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "8px 0 4px",
+          padding: "8px 0px",
           mt: "8px",
+          borderBottom:"1px solid #f1f2f4"
         }}
       >
         <Box
@@ -22,8 +23,8 @@ function LocMobile() {
             alignItems: "center",
           }}
         >
-          <FmdGoodIcon sx={{ color: "#f9a825" }} />
-          <Typography sx={{ fontSize: "12px", color: "#5a5c7a", mr: "5px" }}>
+          <PlaceOutlinedIcon sx={{ color: "#f9a825" }} />
+          <Typography sx={{ fontSize: "13px", color: "#5a5c7a", mr: "5px",fontWeight:400 }}>
             لطفا شهر خود را انتخاب کنید
           </Typography>
         </Box>

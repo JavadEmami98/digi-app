@@ -17,7 +17,7 @@ body {
   padding: 0px;
   width: 100%;
   direction: rtl;
-  overflow-x: hidden;
+  -x: hidden;
   font-family: Yekan, sans-serif !important;
 }
 * {
@@ -29,5 +29,3 @@ body {
   -webkit-font-feature-settings: "ss02";
   font-feature-settings: "ss02";
 }
-
-
