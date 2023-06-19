@@ -3,7 +3,7 @@ import { Box, Container } from "@mui/material";
 import SwiperHeader from "../component/Swiper/Swiper";
 import Swiper2 from "../component/Swiper2/Swiper2";
 import Grid2 from "../component/Grid2/Grid2";
-/* import Banner from "../component/Banner/Banner"; */
+import Banner from "../component/Banner/Banner";
 import Header from "../component/Header/Header";
 import Categories from "../component/Categories/Categories";
 import Digit from "../component/Digit/Digit";
@@ -16,14 +16,15 @@ import DigiPlus from "../component/DigiPlus/DigiPlus";
 import DigiClub from "../component/DigiClub/DigiClub";
 /* import Footer from "../component/Footer/Footer"; */
 import Reading from "../component/Reading/Reading";
-/* import Offer from "../component/Offer/Offer";
-import BestSelling from "../component/BestSelling/BestSelling"; */
+import Offer from "../component/Offer/Offer";
+/* import BestSelling from "../component/BestSelling/BestSelling"; */
 import "./first.css";
 import HeaderMobile from "../component/HeaderMobile/HeaderMobile";
 import SearchMobile from "../component/SearchMobile/SearchMobile";
 import LocMobile from "../component/LocationMobile/LocMobile";
 import GridFour from "../component/FourPics/GridFour";
 import DigiPlusMobile from "../component/DigiPlusMobile/DigiPlusMobile";
+import Four from "../component/Four/Four";
 
 const twopics = [
   {
@@ -68,7 +69,7 @@ function Index() {
         <Suggestion /> 
         <Popular />
 
-      {/*   <Box
+         <Box
           sx={{
             display: "flex",
             flexDirection: "row",
@@ -82,7 +83,7 @@ function Index() {
             <img key={index} className="twopic" src={item.image} alt="" />
           ))}
         </Box>
-        <Box
+       {/* <Box
           sx={{
             display: "flex",
             flexDirection: "row",
@@ -105,25 +106,14 @@ function Index() {
        
         <DigiClub />
 
-        {/* <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "space-between",
-            height: "420px",
-            border: "1px solid #e0e0e6",
-            borderRadius: "16px",
-            mt: "24px",
-          }}
-        >
-          <Grid2 />
-        </Box> */}
-        {/*  <BestSelling /> */}
-        {/*  <Offer /> */}
+        <Four/>
+
+     
+   {/*    <BestSelling />  */}
+         <Offer />
         <Reading />
       </Container>
-      {/* <Footer /> */}
+   {/*    <Footer /> */}
     </div>
   );
 }

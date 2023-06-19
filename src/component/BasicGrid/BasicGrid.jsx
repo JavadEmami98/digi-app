@@ -71,10 +71,10 @@ export default function BasicGrid() {
       <Grid
         container
         spacing={0}
-        sx={{maxWidth: "1304px", height: "315px", mt: "10px",border: "1px solid #e0e0e6", borderRadius:"16px",overflow:{xs:"auto",sm:"auto",md:"auto"}}}
+        sx={{maxWidth: "1304px", height: "315px", mt: "10px",border: "1px solid #e0e0e6", borderRadius:"16px",overflowX:"auto"}}
       >
         {card.map((item, index) => (
-          <Grid item lg={2} xs={2} sm={2} md={2} xl={2} key={index}>
+          <Grid item  xs={6} sm={6} md={4} lg={2} xl={2} key={index}>
             <Card title={item.title} image={item.image} />
           </Grid>
         ))}  

@@ -12,11 +12,10 @@ function CartGrid({title}) {
         sx={{
           display: "flex",
           flexDirection: "column",
-          /* width: "325px", */
-          height: "418px",
-          background: "red",
+          width:"100%",
+          height:"100%",
           padding: "8px 20px",
-          border: "1px solid #e0e0e6",
+     /*      border: "1px solid #e0e0e6", */
           borderRadius: "16px",
         }}
       >
@@ -26,8 +25,7 @@ function CartGrid({title}) {
             sx={{
               display: "flex",
               justifyContent: "space-between",
-              width: "285px",
-              height: "35px",
+              gap:2
             }}
           >
             {title}
@@ -44,8 +42,8 @@ function CartGrid({title}) {
             alignItems: "center",
             justifyContent: "center",
             margin: "4px 0px 12px",
-            width: "284.85px",
-            height: "26.04px",
+        /*     width: "284.85px",
+            height: "26.04px", */
             color: "#19bfd3",
           }}
         >

@@ -4,17 +4,17 @@ import CartGrid from './CartGrid';
 
 const text = [
   { title: "گوشی موبایل" },
-  { tilte: "کیف و کاور گوشی" },
+  { title: "کیف و کاور گوشی" },
   { title: "هدفون، هدست و هندزفری" },
   { title: "ساعت هوشمند" },
 ];
 
 export default function Grid2() {
     return (
-      <Box sx={{ flexGrow: 1,}}>
+      <Box sx={{ flexGrow: 1}}>
         <Grid container spacing={0}>
         {text.map((item, index) => (
-          <Grid item lg={3} key={index}>
+          <Grid item xs={12} sm={12} md={12} lg={3} xl={3} key={index}>
             <CartGrid title={item.title}/>
           </Grid>
           ))}

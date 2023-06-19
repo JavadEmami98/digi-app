@@ -4,6 +4,7 @@ import "swiper/css/pagination";
 import "./Swiper3.css";
 import { Pagination } from "swiper";
 import CartSwiper3 from "./CartSwiper3";
+import { useMediaQuery } from "@mui/material";
 
 const brands = [
   {
@@ -69,11 +70,12 @@ const brands = [
 ];
 
 export default function Swiper3() {
+  const isMd = useMediaQuery("(min-width:900px)");
   return (
     <>
       <Swiper
-        slidesPerView={8}
-        spaceBetween={0}
+        slidesPerView={isMd ? 6 : 3}
+        spaceBetween={12}
         pagination={{
           clickable: true,
         }}

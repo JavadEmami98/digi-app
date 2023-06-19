@@ -114,7 +114,7 @@ function GridOffer() {
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={0}>
           {offer.map((item, index) => (
-            <Grid key={index} item xs={2}>
+            <Grid key={index} item xs={6} sm={6} md={6} lg={2} xl={2}>
               <CartOffer
                 image={item.image}
                 price={item.price}

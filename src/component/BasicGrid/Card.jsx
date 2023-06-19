@@ -12,7 +12,7 @@ function Card({ title, image }) {
           alignItems: "center",
           flexDirection: "column",
           /* background: "green", */
-          width: "186px",
+         /*  width: "186px", */
           height: "155px",
         }}
       >

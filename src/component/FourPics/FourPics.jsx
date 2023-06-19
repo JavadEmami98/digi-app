@@ -14,7 +14,7 @@ function FourPics({image}) {
           width:"100%"
         }}
       >
-          <img className="four-pic" src={image} alt="" style={{height:"100%",width:"100%",objectFit:"cover",maxHeight:"200px",borderRadius:"15px",
+          <img className="four-pic" src={image} alt="" style={{height:"100%",width:"100%",objectFit:"cover",borderRadius:"15px",
         }}/>
       </Box>
     </div>

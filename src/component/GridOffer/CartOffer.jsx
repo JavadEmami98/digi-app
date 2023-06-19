@@ -13,7 +13,7 @@ function CartOffer({ image, price, offer }) {
             cursor: "pointer",
             overflow: "hidden",
             padding: "12px 8px",
-            width: "213.06px",
+          
             height: "277.27px",
             borderBottom: "1px solid #f1f2f4",
             borderLeft: "1px solid #f1f2f4",
@@ -25,7 +25,6 @@ function CartOffer({ image, price, offer }) {
               flexDirection: "column",
               position: "relative",
               alignItems: "stretch",
-              width: "196.26px",
               height: "150px",
               mb: "4px",
             }}
@@ -55,7 +54,7 @@ function CartOffer({ image, price, offer }) {
                 justifyContent: "space-between",
                 alignItems: "center",
                 cursor: "pointer",
-                width: "196.26px",
+             
                 height: "34.4",
                 mt: "15px",
               }}
@@ -65,7 +64,6 @@ function CartOffer({ image, price, offer }) {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  width: "34px",
                   height: "20px",
                   color: "white",
                   padding: "0px 4px",
@@ -82,7 +80,7 @@ function CartOffer({ image, price, offer }) {
                   alignItems: "center",
                   flexGrow: 1,
                   gap: "4px",
-                  width: "162.26px",
+      /*             width: "162.26px", */
                   height: "34.4",
                   color: "#3f4064",
                 }}
@@ -95,7 +93,7 @@ function CartOffer({ image, price, offer }) {
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
-                width: "196.26px",
+         /*        width: "196.26px", */
                 height: "26.04px",
                 pl: "20px",
               }}

@@ -9,20 +9,19 @@ function CartSwiper3({image}) {
         sx={{
           display: "flex",
           alignItems: "center",
-          justifyContent: "center",
-          width: "142px",
+  /*         justifyContent: "center", */
+       /*    width: "142px", */
           height: "118px",
          /*  overflow: "hidden", */
-          padding:"4px 16px",
-          borderLeft:"1px solid #e0e0e6"
+          padding:"4px 10px",
         }}
       >
         <Box sx={{
           display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          width: "110px",
-          height: "110px",
+         /*  alignItems: "center", */
+        /*   justifyContent: "center", */
+          /* width: "110px", */
+         /*  height: "110px", */
           /* overflow: "hidden", */
         }}>
         <img className="swiper3-img" src={image} alt="" />

@@ -28,7 +28,7 @@ function GridFour() {
         <Box sx={{ flexGrow: 1,width:"100%"}}>
       <Grid container spacing={1.2}>
       {fourpic.map((item, index) => (
-        <Grid key={index} item sm={6} xs={6} md={6} lg={1} xl={1}>
+        <Grid key={index} item sm={6} xs={6} md={6} lg={3} xl={3}>
          <FourPics image={item.image}/>
         </Grid>))}
       </Grid>

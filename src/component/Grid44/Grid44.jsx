@@ -1,11 +1,12 @@
-import * as React from 'react';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import Cart44 from './Cart44';
+import * as React from "react";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import Cart44 from "./Cart44";
 
 const PICTURES = [
   {
-    cartImage: [
+    id:0,
+    cartimage: [
       {
         img: "https://dkstatics-public.digikala.com/digikala-products/ec9a962187e1f82cc47e7a148ef99ec1c6fd024d_1656423336.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
       },
@@ -20,8 +21,8 @@ const PICTURES = [
       },
     ],
   },
-  {
-    cartImage: [
+  {id:1,
+    cartimage: [
       {
         img: "https://dkstatics-public.digikala.com/digikala-products/ff30c7f1b01d44f35423f0fcb56f3cb76a42ea2b_1661171000.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
       },
@@ -36,8 +37,8 @@ const PICTURES = [
       },
     ],
   },
-  {
-    cartImage: [
+  {id:2,
+    cartimage: [
       {
         img: "https://dkstatics-public.digikala.com/digikala-products/e4b2145a5e77bdc30aafff78bba4734798ac8d68_1620202335.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
       },
@@ -52,8 +53,8 @@ const PICTURES = [
       },
     ],
   },
-  {
-    cartImage: [
+  {id:3,
+    cartimage: [
       {
         img: "https://dkstatics-public.digikala.com/digikala-products/6ca3f4bc8fb197d2ffcdf152f6864722f60c2d1b_1675316803.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
       },
@@ -70,25 +71,18 @@ const PICTURES = [
   },
 ];
 
-
 export default function Grid44() {
-    return (
-      <Box>
-        <Grid container rowSpacing={0.25} columnSpacing={0.25}>
-        {PICTURES.map((item,index)=>(
-          <Grid key={index} item image={item.cartImage.img} lg={6}>
-            <Cart44/>
-          </Grid>))}
-          {/* <Grid item lg={6}>
-          <Cart44/>
+  return (
+    <Box>
+      <Grid container spacing={0}>
+        {PICTURES?.map((item, index) => (
+          <Grid key={index} item xs={6} sm={6} md={6} lg={6} xl={6}>
+            {item.cartimage.map((option, index) => (
+              <Cart44 key={index} image={option.img} />
+            ))}
           </Grid>
-          <Grid item lg={6}>
-          <Cart44/>
-          </Grid>
-          <Grid item lg={6}>
-           <Cart44/>
-          </Grid> */}
-        </Grid>
-      </Box>
-    );
-  }
+        ))}
+      </Grid>
+    </Box>
+  );
+}

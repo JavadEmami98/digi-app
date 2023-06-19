@@ -9,7 +9,7 @@ function Offer() {
       <Box
         sx={{
        /*    width: "1304px", */
-          height: "910.69px",
+       
           mt: "24px",
           border: "1px solid #e0e0e6",
           borderRadius: "16px",
