@@ -7,8 +7,9 @@ function Cart44({ image }) {
       <Box
         sx={{
           display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+         /*  alignItems: "center",
+          justifyContent: "center", */
+          p:"5px"
         }}
       >
         <img className="pic-44" src={image} alt="" />

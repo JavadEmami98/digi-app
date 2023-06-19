@@ -10,7 +10,7 @@ function FooterGrid() {
     <div>
       <Box sx={{ flexGrow: 1, mb: "20px" }}>
         <Grid container spacing={0.5}>
-          <Grid item lg={3}>
+          <Grid item sm={6} xs={6} md={6} lg={3} xl={3}>
             <Box sx={{ mb: "8px" }}>
               <Typography
                 sx={{
@@ -84,7 +84,7 @@ function FooterGrid() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item lg={3}>
+          <Grid item sm={6} xs={6} md={6} lg={3} xl={3}>
             <Box sx={{ mb: "8px" }}>
               <Typography
                 sx={{
@@ -148,8 +148,8 @@ function FooterGrid() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item lg={3}>
-            <Box sx={{ mb: "8px" }}>
+          <Grid item sm={6} xs={6} md={6} lg={3} xl={3}>
+            <Box sx={{ mb: "8px",display:{xs:"none",sm:"none",md:"block",lg:"block",xl:"block"} }}>
               <Typography
                 sx={{
                   fontSize: "19px",
@@ -192,7 +192,7 @@ function FooterGrid() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item lg={3}>
+          <Grid item sm={12} xs={12} md={12} lg={3} xl={3}>
             <Box sx={{ mb: "12px" }}>
               <Typography
                 sx={{

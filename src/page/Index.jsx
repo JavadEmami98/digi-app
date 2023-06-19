@@ -14,7 +14,7 @@ import Suggestion from "../component/Suggestion/Suggestion";
 import Popular from "../component/Popular/Popular";
 import DigiPlus from "../component/DigiPlus/DigiPlus";
 import DigiClub from "../component/DigiClub/DigiClub";
-/* import Footer from "../component/Footer/Footer"; */
+import Footer from "../component/Footer/Footer";
 import Reading from "../component/Reading/Reading";
 import Offer from "../component/Offer/Offer";
 /* import BestSelling from "../component/BestSelling/BestSelling"; */
@@ -26,6 +26,16 @@ import GridFour from "../component/FourPics/GridFour";
 import DigiPlusMobile from "../component/DigiPlusMobile/DigiPlusMobile";
 import Four from "../component/Four/Four";
 
+const twopic = [
+  {
+    image:
+      "https://dkstatics-public.digikala.com/digikala-adservice-banners/c0d274defc8c3006fe3f8b35290fd207d50d9740_1681405346.jpg?x-oss-process=image/quality,q_95",
+  },
+  {
+    image:
+      "https://dkstatics-public.digikala.com/digikala-adservice-banners/46ff3ba5b960203023beb0c3e19df5b9d65b22df_1681405803.jpg?x-oss-process=image/quality,q_95",
+  },
+];
 const twopics = [
   {
     image:
@@ -64,25 +74,16 @@ function Index() {
         <GreenBox />
         <GridFour/>
         <Grouping /> 
-        <TwoPics />
+        <TwoPics 
+        data={twopic}
+        />
 
         <Suggestion /> 
         <Popular />
 
-         <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "space-between",
-            height: "258px",
-            mt: "24px",
-          }}
-        >
-          {twopics.map((item, index) => (
-            <img key={index} className="twopic" src={item.image} alt="" />
-          ))}
-        </Box>
+       <TwoPics
+       data={twopics}
+       />
        {/* <Box
           sx={{
             display: "flex",
@@ -106,14 +107,14 @@ function Index() {
        
         <DigiClub />
 
-        <Four/>
+     {/*    <Four/> */}
 
      
-   {/*    <BestSelling />  */}
+{/*       <BestSelling />  */}
          <Offer />
         <Reading />
       </Container>
-   {/*    <Footer /> */}
+      <Footer />
     </div>
   );
 }

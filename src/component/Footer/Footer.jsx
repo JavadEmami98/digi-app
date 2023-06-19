@@ -31,8 +31,6 @@ function Footer() {
         <Box
           sx={{
             width: "100%",
-            maxWidth: "1500px",
-            height: "965px",
             padding: "0px 20px",
           }}
         >
@@ -41,7 +39,7 @@ function Footer() {
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
-              height: "40px",
+           /*    height: "40px", */
               /* width: "100%", */
             }}
           >
@@ -58,7 +56,7 @@ function Footer() {
                 alignItems: "center",
                 padding: "8px 16px",
               /*   width: "137.81px", */
-                height: "40px",
+       /*          height: "40px", */
                 border: "1px solid #e0e0e6",
                 borderRadius: "8px",
                 cursor: "pointer",
@@ -69,8 +67,8 @@ function Footer() {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  width: "104.21px",
-                  height: "26.04px",
+               /*    width: "104.21px",
+                  height: "26.04px", */
                 }}
               >
                 <Typography
@@ -90,7 +88,7 @@ function Footer() {
               mb: "4px",
               flexWrap: "nowrap",
               /* width: "1160", */
-              height: "26.04px",
+             /*  height: "26.04px", */
               color: "#3f4064",
             }}
           >
@@ -112,12 +110,12 @@ function Footer() {
           </Box>
           <Box
             sx={{
-              display: "flex",
+              display: {xl:"flex",lg:"flex",md:"flex",sm:"none",xs:"none"},
               justifyContent: "space-between",
               alignItems: "center",
               /* width: "100%", */
               /* maxwidth: "1160px", */
-              height: "103.86px",
+           /*    height: "103.86px", */
               margin: "32px 0",
               padding:"0px 110px"
             }}
@@ -129,7 +127,7 @@ function Footer() {
                 flexDirection: "column",
                 alignItems: "center",
                /*  width: "100%", */
-                height: "103.86px",
+             /*    height: "103.86px", */
                 padding: "12px 0",
               }}
             >
@@ -148,7 +146,7 @@ function Footer() {
                 flexDirection: "column",
                 alignItems: "center",
               /*   width: "100%", */
-                height: "103.86px",
+        /*         height: "103.86px", */
                 padding: "12px 0",
               }}
             >
@@ -167,7 +165,7 @@ function Footer() {
                 flexDirection: "column",
                 alignItems: "center",
                 /* width: "100%", */
-                height: "103.86px",
+     /*            height: "103.86px", */
                 padding: "12px 0",
               }}
             >
@@ -186,7 +184,7 @@ function Footer() {
                 flexDirection: "column",
                 alignItems: "center",
                 /* width: "100%", */
-                height: "103.86px",
+          /*       height: "103.86px", */
                 padding: "12px 0",
               }}
             >
@@ -205,7 +203,7 @@ function Footer() {
                 flexDirection: "column",
                 alignItems: "center",
                /*  width: "100%", */
-                height: "103.86px",
+        /*         height: "103.86px", */
                 padding: "12px 0",
               }}
             >
@@ -222,12 +220,12 @@ function Footer() {
           <Box
             sx={{
               display: "flex",
-              flexDirection: "row",
+              flexDirection:{sm:"column",xs:"column",md:"column",lg:"row", xl:"row"},
               alignItems: "center",
               justifyContent: "space-between",
               padding: "8px 20px",
             /*   width: "100%", */
-              height: "76px",
+             /*  height: "76px", */
               mb: "28px",
               borderRadius: "8px",
               background: "#3c4b6d",
@@ -239,7 +237,7 @@ function Footer() {
                 alignItems: "center",
           /*       width: "100%", */
                 maxWidth: "250px",
-                height: "44.1px",
+         /*        height: "44.1px", */
               }}
             >
               <img
@@ -259,18 +257,18 @@ function Footer() {
                 justifyContent: "flex-end",
                 /* maxWidth: "831.96px",
                 width: "100%", */
-                height: "60px",
+       /*          height: "60px", */
               }}
             >
               <Box
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  justifyContent: "flex-end",
+                  /* justifyContent: "flex-end", */
                   flexWrap: "wrap",
-                  maxWidth: "771.96px",
+             /*      maxWidth: "771.96px", */
               /*     width: "100%", */
-                  height: "60px",
+             /*      height: "60px", */
                 }}
               >
                 {picsft.map((item, index) => (
@@ -304,11 +302,11 @@ function Footer() {
             sx={{
               display: "flex",
               justifyContent: "space-between",
+              flexDirection:{sm:"column",xs:"column",md:"column",lg:"row", xl:"row"},
               alignItems: "center",
-              flexWrap: "nowrap",
               width: "100%",
-              maxWidth: "1481.6px",
-              height: "223.84px",
+             /*  maxWidth: "1481.6px", */
+            /*   height: "223.84px", */
               padding: "32px 0px",
               borderTop: "1px solid aliceblue",
             }}
@@ -318,7 +316,7 @@ function Footer() {
                 position: "relative",
                 display: "block",
                 ml: "40px",
-                height: "159px",
+                /* height: "159px", */
                 color: "#767790",
                 overflow: "hidden",
               }}
@@ -341,8 +339,8 @@ function Footer() {
                   display: "inline-flex",
                   alignItems: "center",
                   mt: "8px",
-                  width: "91.99px",
-                  height: "26.04px",
+        /*           width: "91.99px", */
+                /*   height: "26.04px", */
                   color: "#19bfd3",
                   cursor: "pointer",
                 }}
@@ -356,10 +354,10 @@ function Footer() {
               sx={{
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "flex-end",
+                /* justifyContent: "flex-end", */
                 width: "100%",
-                maxWidth: "387.4px",
-                height: "108.6px",
+              /*   maxWidth: "387.4px",
+                height: "108.6px", */
                 mt: "4px",
               }}
             >
@@ -369,13 +367,13 @@ function Footer() {
                   sx={{
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: "center",
+                /*     justifyContent: "center", */
                     border: "1px solid #e0e0e6",
                     borderRadius: "8px",
                     mr: "8px",
                     padding: "16px",
-                    width: "108.6px",
-                    height: "108.6px",
+         /*            width: "108.6px",
+                    height: "108.6px", */
                   }}
                 >
                   <img

@@ -12,7 +12,7 @@ const text = [
 export default function Grid2() {
     return (
       <Box sx={{ flexGrow: 1}}>
-        <Grid container spacing={0}>
+        <Grid container spacing={5}>
         {text.map((item, index) => (
           <Grid item xs={12} sm={12} md={12} lg={3} xl={3} key={index}>
             <CartGrid title={item.title}/>

@@ -70,19 +70,20 @@ const PICTURES = [
     ],
   },
 ];
-
+console.log(PICTURES.length)
 export default function Grid44() {
   return (
+    
     <Box>
       <Grid container spacing={0}>
         {PICTURES?.map((item, index) => (
-          <Grid key={index} item xs={6} sm={6} md={6} lg={6} xl={6}>
-            {item.cartimage.map((option, index) => (
+          <Grid key={index} item xs={6} sm={6} md={6} lg={3} xl={3}>
+             {item.cartimage.map((option, index) => ( 
               <Cart44 key={index} image={option.img} />
-            ))}
+             ))} 
           </Grid>
         ))}
-      </Grid>
+      </Grid> 
     </Box>
   );
 }
