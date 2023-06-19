@@ -70,20 +70,17 @@ const PICTURES = [
     ],
   },
 ];
-console.log(PICTURES.length)
+
 export default function Grid44() {
   return (
     
     <Box>
-      <Grid container spacing={0}>
-        {PICTURES?.map((item, index) => (
-          <Grid key={index} item xs={6} sm={6} md={6} lg={3} xl={3}>
-             {item.cartimage.map((option, index) => ( 
-              <Cart44 key={index} image={option.img} />
-             ))} 
-          </Grid>
-        ))}
-      </Grid> 
+      <div className="grid grid-cols-2">
+        <img src="https://dkstatics-public.digikala.com/digikala-products/4af1bad23ab1945fa5cef6a333792196e0fe850e_1656426417.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" alt="" />
+        <img src="https://dkstatics-public.digikala.com/digikala-products/4af1bad23ab1945fa5cef6a333792196e0fe850e_1656426417.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" alt="" />
+        <img src="https://dkstatics-public.digikala.com/digikala-products/4af1bad23ab1945fa5cef6a333792196e0fe850e_1656426417.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" alt="" />
+        <img src="https://dkstatics-public.digikala.com/digikala-products/4af1bad23ab1945fa5cef6a333792196e0fe850e_1656426417.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" alt="" />
+      </div>
     </Box>
   );
 }

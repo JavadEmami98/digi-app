@@ -5,6 +5,9 @@ import { Box, Container, Typography } from "@mui/material";
 import GridProdudct from "../component/GridProduct/GridProdudct";
 import { Sort } from "@mui/icons-material";
 import Filter from "../component/Filter/Filter";
+import SearchMobile from "../component/SearchMobile/SearchMobile";
+import HeaderMobile from "../component/HeaderMobile/HeaderMobile";
+import LocMobile from "../component/LocationMobile/LocMobile";
 
 const filter = [
   { title: "پرفروش‌ ترین‌", id: 7 },
@@ -20,8 +23,15 @@ function Product() {
   return (
     <div>
       <Banner />
-      <Header />
+      <Box sx={{ display: { md: "none", xs: "none",sm:"none",lg:"block",xl:"block"}}}>
+        <Header />
+      </Box>
+      
       <Container maxWidth="xl">
+      <Box sx={{ display: { md: "block", xs: "block",sm:"block",lg:"none",xl:"none"}}}>
+      <HeaderMobile/>
+        <SearchMobile/>
+        <LocMobile/></Box>
         <nav>
           <Box
             sx={{

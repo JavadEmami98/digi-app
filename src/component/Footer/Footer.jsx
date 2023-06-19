@@ -355,7 +355,7 @@ function Footer() {
                 display: "flex",
                 alignItems: "center",
                 /* justifyContent: "flex-end", */
-                width: "100%",
+               /*  width: "100%", */
               /*   maxWidth: "387.4px",
                 height: "108.6px", */
                 mt: "4px",

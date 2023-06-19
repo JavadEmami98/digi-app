@@ -17,7 +17,7 @@ import DigiClub from "../component/DigiClub/DigiClub";
 import Footer from "../component/Footer/Footer";
 import Reading from "../component/Reading/Reading";
 import Offer from "../component/Offer/Offer";
-/* import BestSelling from "../component/BestSelling/BestSelling"; */
+import BestSelling from "../component/BestSelling/BestSelling";
 import "./first.css";
 import HeaderMobile from "../component/HeaderMobile/HeaderMobile";
 import SearchMobile from "../component/SearchMobile/SearchMobile";
@@ -107,10 +107,10 @@ function Index() {
        
         <DigiClub />
 
-     {/*    <Four/> */}
+        <Four/>
 
      
-{/*       <BestSelling />  */}
+      {/* <BestSelling />  */}
          <Offer />
         <Reading />
       </Container>

@@ -68,7 +68,7 @@ function CartProduct() {
                     borderRadius: "12px",
                     padding: "0px 12px",
                     color: "#81858b",
-                    background: "#e0e0e6",
+                    background: "#F2F2F280",
                   }}
                 >
                   <MopedOutlinedIcon
