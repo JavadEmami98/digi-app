@@ -2,8 +2,8 @@ import React from "react";
 import { Box, Container } from "@mui/material";
 import SwiperHeader from "../component/Swiper/Swiper";
 import Swiper2 from "../component/Swiper2/Swiper2";
-import Grid2 from "../component/Grid2/Grid2";
-import Banner from "../component/Banner/Banner";
+/* import Grid2 from "../component/Grid2/Grid2";
+import Banner from "../component/Banner/Banner"; */
 import Header from "../component/Header/Header";
 import Categories from "../component/Categories/Categories";
 import Digit from "../component/Digit/Digit";
@@ -17,7 +17,7 @@ import DigiClub from "../component/DigiClub/DigiClub";
 import Footer from "../component/Footer/Footer";
 import Reading from "../component/Reading/Reading";
 import Offer from "../component/Offer/Offer";
-import BestSelling from "../component/BestSelling/BestSelling";
+/* import BestSelling from "../component/BestSelling/BestSelling"; */
 import "./first.css";
 import HeaderMobile from "../component/HeaderMobile/HeaderMobile";
 import SearchMobile from "../component/SearchMobile/SearchMobile";
