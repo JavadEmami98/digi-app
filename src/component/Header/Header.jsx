@@ -10,6 +10,12 @@ import WhatshotOutlinedIcon from "@mui/icons-material/WhatshotOutlined";
 import PercentOutlinedIcon from "@mui/icons-material/PercentOutlined";
 import LocalOfferOutlinedIcon from "@mui/icons-material/LocalOfferOutlined";
 import Tooltip from "@mui/material/Tooltip";
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+import LaptopIcon from '@mui/icons-material/Laptop';
+import ChairIcon from '@mui/icons-material/Chair';
+import MonitorHeartIcon from '@mui/icons-material/MonitorHeart';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+
 
 function Header() {
   return (
@@ -44,7 +50,7 @@ function Header() {
               justifyContent: "space-between",
               alignItems: "center",
               /*  width: "134px", */
-              height: "40px",
+              /* height: "40px", */
               backgroundColor: "white",
               border: "1px solid #e0e0e6",
               mr: "20px",
@@ -70,9 +76,10 @@ function Header() {
           flexDirection: "row",
           alignItems: "center",
           width: "100%",
-          height: "40px",
+         /*  height: "40px", */
           fontSize: "12px",
           borderBottom: "1px solid  #e0e0e6",
+          pb:"5px"
         }}
       >
         <Box
@@ -80,17 +87,94 @@ function Header() {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            /*  width: "142.05px", */
-            height: "30px",
+          /*   height: "30px", */
             fontSize: "18px",
             typography: "body2",
+            cursor:"pointer",
           }}
         >
+          <div className="open-menu flex items-center h-full">
           <MenuOutlinedIcon sx={{ pr: "5px" }} />
-          <Typography sx={{ mr: "5px", fontSize: "14px", typography: "body2" }}>
+          <Typography  sx={{ mr: "5px", fontSize: "14px", typography: "body2"}}>
             دسته‌بندی کالاها
-          </Typography>
+          </Typography></div>
+            {/* Menu */}
+            <div className="menu-bar absolute top-[110px] right-[5px] bg-red-200 z-10">
+              <div className="flex">
+                {/* column right */}
+                <div className=" border-l min-w-[180px]">
+                  <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex items-center my-[10px] pr-1 py-2 cursor-pointer hover:bg-[#f1f2f4]">
+                  <PhoneIphoneIcon sx={{p:"2px"}}/>
+                  <Typography sx={{fontSize:"13px",pr:"3px"}}>موبایل</Typography>
+                </Box>
+                  <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex items-center my-[10px] pr-1 py-2 cursor-pointer hover:bg-[#f1f2f4]">
+                  <LaptopIcon sx={{p:"2px"}}/>
+                  <Typography sx={{fontSize:"13px",pr:"3px"}}>کالای دیجیتال</Typography>
+                </Box>
+                  <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex items-center my-[10px] pr-1 py-2 cursor-pointer hover:bg-[#f1f2f4]">
+                  <ChairIcon sx={{p:"2px"}}/>
+                  <Typography sx={{fontSize:"13px",pr:"3px"}}>خانه و آشپزخانه</Typography>
+                </Box>
+                  <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex items-center my-[10px] pr-1 py-2 cursor-pointer hover:bg-[#f1f2f4]">
+                  <MonitorHeartIcon sx={{p:"2px"}}/>
+                  <Typography sx={{fontSize:"13px",pr:"3px"}}>زیبایی و سلامت</Typography>
+                </Box>
+                </div>
+                {/* column left */}    
+                <div className="flex flex-col">
 
+                
+                  <div className="flex py-[20px] pr-[20px] w-full">
+                  <Typography sx={{fontSize:"14px"}}>همه محصولات موبایل</Typography>
+                  <ArrowBackIosNewIcon sx={{p:"7px"}}/>
+                </div>
+                <div className="grid grid-cols-6 gap-5 pr-[20px] w-full">
+                 <div>
+                    <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex border-r-[2px] border-[#ef394e] cursor-pointer">
+                <Typography sx={{fontSize:"15px",pr:"5px"}}>برند های مختلف گوشی موبایل</Typography>
+                <ArrowBackIosNewIcon sx={{p:"7px"}}/>
+                </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">گوشی اپل</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">گوشی سامسونگ</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">گوشی سونی</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">گوشی نوکیا</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">گوشی شیامی</Box>
+                 </div>
+                <div>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex border-r-[2px] border-[#ef394e] cursor-pointer">
+                <Typography sx={{fontSize:"15px",pr:"5px"}}>گوشی براساس قیمت    </Typography>
+                <ArrowBackIosNewIcon sx={{p:"7px"}}/>
+                </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> گوشی تا 2 میلیون تومان</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> گوشی تا 5 میلیون تومان</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> گوشی تا 7 میلیون تومان</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> گوشی تا 10 میلیون تومان</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> گوشی تا 15 میلیون تومان</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex border-r-[2px] border-[#ef394e] cursor-pointer">
+                <Typography sx={{fontSize:"15px",pr:"5px"}}>گوشی براساس حافظه داخلی      </Typography>
+                <ArrowBackIosNewIcon sx={{p:"7px"}}/>
+                </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> گوشی تا 16 گیگابایت</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">  گوشی تا 32 گیگابایت </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">   گوشی تا 64 گیگابایت</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">  گوشی تا 128 گیگابایت </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">  گوشی تا 256 گیگابایت </Box>
+                </div>
+                <div>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex border-r-[2px] border-[#ef394e] cursor-pointer">
+                <Typography sx={{fontSize:"15px",pr:"5px"}}> رزلوشن عکس</Typography>
+                <ArrowBackIosNewIcon sx={{p:"7px"}}/>
+                </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> تا 16 مگاپیکسل</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">  تا 32 مگاپیکسل</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">   تا 48 مگاپیکسل</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">   تا 50 مگاپیکسل</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">    تا 108 مگاپیکسل</Box>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           <Box
             sx={{
               display: "flex",

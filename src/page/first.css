@@ -224,11 +224,18 @@
   color: #767790;
 }
 
-
 .red {
   color: #ef394e;
 }
 
 .black {
   color: black;
+}
+
+.menu-bar {
+  display: none;
+}
+
+.open-menu:hover + .menu-bar {
+  display: block;
 }
