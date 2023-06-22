@@ -93,7 +93,7 @@ function Header() {
             cursor:"pointer",
           }}
         >
-          <div className="open-menu flex items-center h-full">
+          <div className="open-menu flex items-center">
           <MenuOutlinedIcon sx={{ pr: "5px" }} />
           <Typography  sx={{ mr: "5px", fontSize: "14px", typography: "body2"}}>
             دسته‌بندی کالاها
@@ -103,7 +103,7 @@ function Header() {
               <div className="flex">
                 {/* column right */}
                 <div className=" border-l min-w-[180px]">
-                  <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex items-center my-[10px] pr-1 py-2 cursor-pointer hover:bg-[#f1f2f4]">
+                  <Box sx={{"&:hover":{color:"#ef4056"}}} className="mobile flex items-center my-[10px] pr-1 py-2 cursor-pointer hover:bg-[#f1f2f4]">
                   <PhoneIphoneIcon sx={{p:"2px"}}/>
                   <Typography sx={{fontSize:"13px",pr:"3px"}}>موبایل</Typography>
                 </Box>
@@ -121,10 +121,8 @@ function Header() {
                 </Box>
                 </div>
                 {/* column left */}    
-                <div className="flex flex-col">
-
-                
-                  <div className="flex py-[20px] pr-[20px] w-full">
+                <div className="mobile-option flex flex-col">
+                  <div className=" flex py-[20px] pr-[20px] w-full">
                   <Typography sx={{fontSize:"14px"}}>همه محصولات موبایل</Typography>
                   <ArrowBackIosNewIcon sx={{p:"7px"}}/>
                 </div>

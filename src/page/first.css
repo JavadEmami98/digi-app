@@ -236,6 +236,19 @@
   display: none;
 }
 
-.open-menu:hover + .menu-bar {
+.open-menu:hover + .menu-bar  {
   display: block;
 }
+
+.open-menu {
+  display: block;
+}
+
+/* .mobile-option {
+  display: none;
+}
+
+.mobile:hover + .mobile-option {
+  display: block;
+}
+ */
