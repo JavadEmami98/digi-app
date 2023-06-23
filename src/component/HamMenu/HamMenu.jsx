@@ -39,7 +39,7 @@ const HamMenu = () => {
   return (
     <Fragment>
       <div>
-        <Box sx={{ display: "flex", alignItems: "center" }}>
+        <Box sx={{ display: "flex", alignItems: "center",overflowY:"auto" }}>
           <MenuIcon onClick={() => setOpen(true)} />
           <Drawer anchor={"right"} open={open} onClose={() => setOpen(false)}>
             <Box

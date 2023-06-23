@@ -61,7 +61,7 @@ function Index() {
         <LocMobile/>
       </Box>
       </Container>
-      <Box sx={{ display: { md: "block", xs: "none" } }}>
+      <Box sx={{ display: {lg:"block",xl:"block", md: "none", xs: "none" } }}>
         <Categories />
       </Box>
 

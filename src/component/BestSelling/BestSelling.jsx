@@ -69,7 +69,7 @@ function BestSelling() {
             position: "relative",
             overflow: "hidden",
             boxSizing: "border-box",
-            maxWidth: "1286px",
+          /*   maxWidth: "1286px", */
             width: "100%",
             height: "298px",
           }}

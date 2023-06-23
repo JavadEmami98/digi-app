@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const product = [
   {
@@ -31,27 +32,33 @@ const product = [
 
 function GreenBox() {
   return (
-    <div>
+    <div className="back-green">
       <Box
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          flexDirection: {lg:"row",xl:"row",md:"row",sm:"column",xs:"column"},
+          flexDirection: {lg:"row",xl:"row",md:"column",sm:"column",xs:"column"},
           alignItems: "center",
           /* width: "1304px", */
          /*  height: "110px", */
-          backgroundColor: "#e2f0e2",
+          zIndex:10,
+          backgroundImage:"url('https://www.digikala.com/statics/img/svg/typography/freshPattern.svg')",
+          backgroundRepeat: "no-repeat",
           marginTop: "5px",
           borderRadius: "15px",
+          px:"40px",
+          pt:"16px",
+          pb:"12px"
         }}
       >
         <Box
           sx={{
             display: "flex",
-            justifyContent: "space-between",
+            justifyContent: "flex-start",
             flexDirection: "row",
             alignItems: "center",
-            columnGap:2
+            columnGap:2,
+            width:"100%"
           /*   width: "467px", */
      /*        height: "62px", */
        /*      mr: "25px", */
@@ -60,10 +67,12 @@ function GreenBox() {
           <img
             src="https://www.digikala.com/statics/img/png/amazing/fresh.png"
             alt=""
+            style={{height:"62px"}}
           />
           <img
             src="https://www.digikala.com/statics/img/svg/typography/fresh.svg"
             alt=""
+            style={{maxwidth:"250px",height:"20px"}}
           />
           <Typography
             sx={{
@@ -74,13 +83,13 @@ function GreenBox() {
               color: "white",
               padding: "5px 12px",
               borderRadius: "15px",
-              fontSize: "15px",
+              fontSize: "14px",
             }}
           >
             تا ۵۷٪ تخفیف
           </Typography>
         </Box>
-
+        
         <Box
           sx={{
             display: "flex",
@@ -92,16 +101,18 @@ function GreenBox() {
             height: "74px",
             /* backgroundColor: "white", */
          /*    mr: "95px", */
+         width:"100%"
           }}
         >
-          {product.map((item, index) => (
+          <Box sx={{display:"flex"}}>
+             {product.map((item, index) => (
             <Box
               key={index}
               sx={{
                 display: "flex",
                 position: "relative",
-                justifyContent: "center",
-                flexDirection: "column",
+                justifyContent: {sm:"space-between",xs:"space-between",md:"space-between",xl:"center",lg:"center"},
+                flexDirection: {sm:"row",xs:"row",md:"row",xl:"column",lg:"column"},
                 alignItems: "center",
                 maxwidth: "74px",
                 maxheight: "74px",
@@ -115,27 +126,28 @@ function GreenBox() {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  width: "34px",
+                  /* width: "34px", */
                   position: "absolute",
-                  height: "20px",
+                  /* height: "20px", */
                   backgroundColor: "red",
                   mt: "5px",
                   borderRadius: "16px",
-                  fontSize: "14px",
-                  bottom: "4px",
+                  fontSize: "12px",
+                  bottom: "5px",
                   right: "5px",
                   color: "white",
+                  px:"4px"
                 }}
               >
                 {item.discount}
               </Typography>
             </Box>
           ))}
-        </Box>
-
-        <Box
+          </Box>
+         <div>
+             <Box
           sx={{
-            display: {xl:"flex",lg:"flex",md:"flex",xs:"none",
+            display: {xl:"flex",lg:"flex",md:"none",xs:"none",
           sm:"none"},
             justifyContent: "space-between",
             flexDirection: "row",
@@ -144,25 +156,24 @@ function GreenBox() {
             height: "50px",
             backgroundColor: "white",
             color: "#39ae00",
-            ml: "25px",
+           /*  ml: "25px", */
             borderRadius: "25px",
             padding: "0 15px",
           }}
         >
-          <Typography sx={{ fontSize: "13px" }}>بیش از ۱۰۰ کالا</Typography>
+          <Typography sx={{ fontSize: "12px" }}>بیش از ۱۰۰ کالا</Typography>
           <ArrowBackOutlinedIcon />
         </Box>
+        <Box sx={{display:{sm:"flex",xs:"flex",md:"flex",xl:"none",lg:"none"},alignItems:"center",justifyContent:"center",width:"44px",height:"44px",backgroundColor:"#fff",borderRadius:"50%",color:"#39ae00"}}>
+          <ArrowBackIcon/>
+        </Box>
+         </div>
+       
+        </Box>
+
+        
+        
       </Box>
-
-      {/* Mobile */}
-      {/* <Box sx={{
-        display:"flex",
-        flexDirection:"column",
-        backgroundColor: "#e2f0e2",
-
-      }}>
-
-      </Box> */}
     </div>
   );
 }

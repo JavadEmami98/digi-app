@@ -26,13 +26,17 @@ function DigiPlus() {
           sx={{
             display: "flex",
             flexDirection: "column",
-            justifyContent: "start",
-            alignItems: "start",
-            width: "392px",
-            height: "114px",
+            /* justifyContent: "start", */
+         /*    alignItems: "start", */
+            /* width: "392px", */
+           /*  height: "114px", */
             pr: "24px",
             pt: "24px",
             zIndex: 10,
+            backgroundImage:"url('https://www.digikala.com/statics/img/png/digiplus/plus-widget.png')",
+            backgroundRepeat:"no-repeat",
+            backgroundPosition: "center center",
+            backgroundSize: "cover",
           }}
         >
           <img
@@ -68,7 +72,7 @@ function DigiPlus() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            width: "868px",
+          /*   width: "868px", */
             height: "356px",
             backgroundColor: "white",
             padding: "0px 16px",
@@ -80,7 +84,7 @@ function DigiPlus() {
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
-              width: "868px",
+             width:"100%",
               height: "66.4px",
               padding: "16px 10px",
             }}

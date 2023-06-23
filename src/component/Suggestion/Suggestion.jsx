@@ -8,7 +8,7 @@ function Suggestion() {
   return (
     <div>
       <Box
-        sx={{ display: "flex", justifyContent: "center", alignItems: "center",mt:"25px" }}
+        sx={{ display: "flex", justifyContent: "center", alignItems: "center",mt:"25px"}}
       >
         <Typography sx={{ fontSize: "20px" }}>پیشنهاد دیجی‌ کالا</Typography>
       </Box>

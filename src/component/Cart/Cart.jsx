@@ -4,7 +4,7 @@ import "./Cart.css";
 
 
 
-function Cart({price,image,dicount}) {
+function Cart({price,image,dicount,offer}) {
   return (
     <div>
       
@@ -15,6 +15,7 @@ function Cart({price,image,dicount}) {
             alignItems: "center",
             width: "182px",
             height: "246px",
+            cursor:"pointer"
           }}
         >
           <div className="img-sw">
@@ -32,19 +33,26 @@ function Cart({price,image,dicount}) {
           >
             <Typography
               sx={{
+                display:"flex",
+                alignItems:"center",
+                justifyContent:"center",
                 width: "34px",
                 height: "20px",
-                backgroundColor: "red",
+                backgroundColor: "#ef394e",
                 mt: "5px",
                 borderRadius: "16px",
                 fontSize: "12px",
+                color:"#fff"
               }}
             >
               {dicount}
             </Typography>
+            <Box sx={{display:"flex",flexDirection:"column"}}>
             <Typography sx={{ mt: "5px", fontSize: "14px" }}>
               {price}
             </Typography>
+            <Typography  sx={{ mt: "5px", fontSize: "12px",color:"#c3c3ce",textDecoration: "line-through"}}>{offer}</Typography>
+            </Box>
           </Box>
         </Box>
      

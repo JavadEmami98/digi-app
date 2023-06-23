@@ -13,10 +13,10 @@ function CartOffer({ image, price, offer }) {
             cursor: "pointer",
             overflow: "hidden",
             padding: "12px 8px",
-          
             height: "277.27px",
-            borderBottom: "1px solid #f1f2f4",
-            borderLeft: "1px solid #f1f2f4",
+          /*   borderBottom: "1px solid #f1f2f4",
+            borderLeft: "1px solid #f1f2f4", */
+            outline: "1px solid #ccc",
           }}
         >
           <Box
@@ -54,7 +54,6 @@ function CartOffer({ image, price, offer }) {
                 justifyContent: "space-between",
                 alignItems: "center",
                 cursor: "pointer",
-             
                 height: "34.4",
                 mt: "15px",
               }}

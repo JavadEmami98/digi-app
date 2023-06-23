@@ -16,7 +16,7 @@ import { Box, Container } from "@mui/material";
 export default function SwiperHeader() {
   return (
     <>
-    <Container maxWidth="xl">
+    <Container maxWidth="full">
       <Box sx={{mt: {xs:"10px"}}}>
         <Swiper
         spaceBetween={30}
@@ -33,52 +33,59 @@ export default function SwiperHeader() {
         className="swiper1"
       >
         <SwiperSlide className="swiper-1"> 
-          <img className="swiper-slide1 img"
-            src="https://api.tahlilmobile.ir/public/downloadFileById/690"
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-adservice-banners/e255c6ff7d8050c119e18596bd8359fd90f8a0c7_1686745939.jpg?x-oss-process=image/quality,q_95/format,webp"
             alt=""
             loading="lazy"
+            style={{maxHeigh:"400px",objectFit:"cover",width:"100%",height:"100%"}}
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-1">
-          <img  className="swiper-slide1 img"
+          <img  className="swiper-slide1-img"
             src="https://dkstatics-public.digikala.com/digikala-adservice-banners/d26092ae04ca542732f9ec33ded309e122bccc28_1681629327.jpg?x-oss-process=image/quality,q_95"
             alt=""
             loading="lazy"
+            style={{height:"400px",objectFit:"cover"}}
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-1">
-          <img  className="swiper-slide1 img"
+          <img  className="swiper-slide1-img"
             src="https://dkstatics-public.digikala.com/digikala-adservice-banners/a2a0cb8dd9cd3ac6564c1a0f54aa3e3669b01a0b_1681626601.jpg?x-oss-process=image/quality,q_95"
             alt=""
             loading="lazy"
+            style={{height:"400px",objectFit:"cover"}}
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-1">
-          <img  className="swiper-slide1 img"
+          <img  className="swiper-slide1-img"
             src="https://dkstatics-public.digikala.com/digikala-adservice-banners/9869329b36e4c75533cc5281632a2763a972f260_1679140919.jpg?x-oss-process=image/quality,q_95"
             alt=""
             loading="lazy"
+            style={{height:"400px",objectFit:"cover"}}
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-1">
-          <img  className="swiper-slide1 img"
+          <img  className="swiper-slide1-img"
             src="https://api.tahlilmobile.ir/public/downloadFileById/141"
             alt=""
             loading="lazy"
+            style={{height:"400px",objectFit:"cover"}}
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-1">
-          <img  className="swiper-slide1 img"
+          <img  className="swiper-slide1-img"
             src="https://api.tahlilmobile.ir/public/downloadFileById/1798"
             alt=""
             loading="lazy"
+            style={{height:"400px",objectFit:"cover"}}
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-1">
-          <img  className="swiper-slide1 img"
+          <img  className="swiper-slide1-img"
             src="https://dkstatics-public.digikala.com/digikala-adservice-banners/304758ab10fd78573926f5ffa2a83dc936588b14_1681541561.jpg?x-oss-process=image/quality,q_95"
             alt=""
             loading="lazy"
+            style={{objectFit:"cover",height:"auto"}}
           />
         </SwiperSlide>
       </Swiper></Box></Container>
