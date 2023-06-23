@@ -30,8 +30,9 @@ import HeaderMobile from "../component/HeaderMobile/HeaderMobile";
 import SearchMobile from "../component/SearchMobile/SearchMobile";
 import LocMobile from "../component/LocationMobile/LocMobile";
 import ItemSwiperMobile from "../component/ItemSwiperMobile/ItemSwiperMobile";
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ReactImageMagnify from 'react-image-magnify';
 
 const list = [
   {title:"فناوری صفحه نمایش : ",
@@ -52,7 +53,7 @@ const slist = [{title:"۲,۰۳۳,۳۳۳ تومان پیش پرداخت"},{title:
 
 function Item() {
   const showToastMessage = () => {
-    toast.success('با موفقیت انجام شد !', {
+    toast.success('! با موفقیت انجام شد ', {
         position: toast.POSITION.TOP_RIGHT
     });
 };
@@ -104,8 +105,21 @@ function Item() {
                 <TocIcon />
             </Box>
             <Box sx={{display:"flex",alignItems:"center",mt:"15px",flexDirection:"column"}}>
-                <img src="https://dkstatics-public.digikala.com/digikala-products/dcd6e4e843bea3f070614a95d27b1181fdf23008_1675774247.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90" alt="" style={{width:"auto",height:"auto",maxHeight:"495px",maxWidth:"495px"}}/>
-              
+               {/*  <img src="https://dkstatics-public.digikala.com/digikala-products/dcd6e4e843bea3f070614a95d27b1181fdf23008_1675774247.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90" alt="" style={{width:"auto",height:"auto",maxHeight:"495px",maxWidth:"495px"}}/> */}
+  {/* MAGNIFY */}
+  <ReactImageMagnify {...{
+    smallImage: {
+        alt: 'Wristwatch by Ted Baker London',
+        isFluidWidth: true,
+        src: "https://dkstatics-public.digikala.com/digikala-products/dcd6e4e843bea3f070614a95d27b1181fdf23008_1675774247.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+    },
+    largeImage: {
+        src: "https://dkstatics-public.digikala.com/digikala-products/dcd6e4e843bea3f070614a95d27b1181fdf23008_1675774247.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+        width: 1200,
+        height: 1200
+    },
+    enlargedImagePosition: "beside",
+}} />
              <ModalImage/>
              <Box sx={{display:"flex",height:"26.04px",width:"100%",alignItems:"center"}}>
              <ErrorOutlineIcon sx={{color:"#81858b",ml:"8px",p:"4px"}}/>

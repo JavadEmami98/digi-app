@@ -93,13 +93,13 @@ function Header() {
             cursor:"pointer",
           }}
         >
-          <div className="open-menu flex items-center">
+          <div className="open-menu h-[40px] flex items-center">
           <MenuOutlinedIcon sx={{ pr: "5px" }} />
           <Typography  sx={{ mr: "5px", fontSize: "14px", typography: "body2"}}>
             دسته‌بندی کالاها
           </Typography></div>
             {/* Menu */}
-            <div className="menu-bar absolute top-[110px] right-[5px] bg-red-200 z-10">
+            <div className="menu-bar absolute top-[105px] right-[5px] bg-red-200 z-10">
               <div className="flex">
                 {/* column right */}
                 <div className=" border-l min-w-[180px]">

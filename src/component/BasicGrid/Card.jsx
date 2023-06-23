@@ -4,7 +4,7 @@ import "./Card.css";
 
 function Card({ title, image }) {
   return (
-    <div>
+    <>
       <Box
         sx={{
           display: "flex",
@@ -12,8 +12,21 @@ function Card({ title, image }) {
           alignItems: "center",
           flexDirection: "column",
           /* background: "green", */
-         /*  width: "186px", */
-          height: "155px",
+          /*  width: "186px", */
+          height: "154px",
+          outline: "1px solid #ccc",
+          cursor: "pointer",
+          overflow: "hidden",
+
+          img: {
+            transition: "all ease-in 300ms ",
+          },
+          ":hover": {
+            img: {
+              transform: "scale(1.2)",
+              transition: "all ease-in 300ms ",
+            },
+          },
         }}
       >
         <Box
@@ -21,18 +34,17 @@ function Card({ title, image }) {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-          /*   width: "84px",
+            /*   width: "84px",
             height: "84px", */
             background: "white",
             borderRadius: "50%",
-            
           }}
         >
           <img className="grid-7" src={image} alt="" />
         </Box>
         <Typography sx={{ mt: "5px" }}> {title} </Typography>
       </Box>
-    </div>
+    </>
   );
 }
 

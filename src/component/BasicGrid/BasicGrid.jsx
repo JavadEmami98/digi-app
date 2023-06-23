@@ -1,6 +1,7 @@
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Card from "./Card";
+import { Fragment } from "react";
 
 const card = [
   {
@@ -68,17 +69,16 @@ const card = [
 export default function BasicGrid() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid
-        container
-        spacing={0}
-        sx={{maxWidth: "1304px", height: "315px", mt: "10px",border: "1px solid #e0e0e6", borderRadius:"16px",overflowX:"auto"}}
-      >
+      <Box
+        className="grid grid-cols-6 gap-[1px]"
+        sx={{maxWidth: "1304px",  mt: "10px",border: "1px solid #e0e0e6", borderRadius:"16px",overflowX:"auto"}}
+      > 
         {card.map((item, index) => (
-          <Grid item  xs={6} sm={6} md={4} lg={2} xl={2} key={index}>
+          <Fragment key={index}>
             <Card title={item.title} image={item.image} />
-          </Grid>
+          </Fragment>
         ))}  
-      </Grid>
+      </Box>
     </Box>
   );
 }

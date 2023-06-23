@@ -236,19 +236,31 @@
   display: none;
 }
 
-.open-menu:hover + .menu-bar  {
+.open-menu:hover + .open-menu {
   display: block;
 }
 
-.open-menu {
+.open-menu:hover + .menu-bar {
   display: block;
 }
 
-/* .mobile-option {
+.menu-bar:hover {
+  display: block;
+}
+
+
+.mobile {
   display: none;
 }
 
-.mobile:hover + .mobile-option {
+.mobile-option:hover + .mobile-option {
   display: block;
 }
- */
+
+.mobile-option:hover + .mobile {
+  display: block;
+}
+
+.mobile:hover {
+  display: block;
+}
