@@ -61,6 +61,7 @@ const HamMenu = () => {
                 }}
               />
             </Box>
+            <div className="grid grid-rows-6 gap-3 py-3 border-b border-[#f1f2f4]">
             {menubar.map((item, index) => (
               <Box
                 key={index}
@@ -68,9 +69,9 @@ const HamMenu = () => {
                   display: "flex",
                   alignItems: "center",
                   padding: "0px 20px",
-                  height: "52px",
-                  borderBottom:
-                    index + 1 === menubar.length ? "1px solid #f1f2f4" : "",
+                  /* height: "52px", */
+                 /*  borderBottom:
+                    index + 1 === menubar.length ? "1px solid #f1f2f4" : "", */
                 }}
               >
                 <Box
@@ -93,7 +94,7 @@ const HamMenu = () => {
                   {item.title}
                 </Typography>
               </Box>
-            ))}
+            ))}</div>
             <Box
               sx={{
                 height: "30px",
@@ -106,6 +107,7 @@ const HamMenu = () => {
                 دسته‌بندی کالاها
               </Typography>
             </Box>
+            <div className="grid grid-rows-none gap-4 py-3">
             {list.map((item, index) => (
               <Box
                 key={index}
@@ -114,7 +116,7 @@ const HamMenu = () => {
                   alignItems: "center",
                   justifyContent: "space-between",
                   padding: "0px 20px",
-                  height: "52px",
+                  /* height: "52px", */
                 }}
               >
                 <Typography sx={{ fontSize: "13px", color: "#3f4064" }}>
@@ -122,7 +124,7 @@ const HamMenu = () => {
                 </Typography>
                 <KeyboardArrowDownOutlinedIcon />
               </Box>
-            ))}
+            ))}</div>
           </Drawer>
         </Box>
       </div>

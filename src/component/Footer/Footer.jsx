@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
 import ArrowBackIosNewOutlinedIcon from "@mui/icons-material/ArrowBackIosNewOutlined";
 import FooterGrid from "./FooterGrid";
 import BackToTopButton from "../BackToTop/BackToTop";
@@ -51,21 +50,9 @@ function Footer() {
               alt=""
               loading="lazy"
             />
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                padding: "8px 16px",
-              /*   width: "137.81px", */
-       /*          height: "40px", */
-                border: "1px solid #e0e0e6",
-                borderRadius: "8px",
-                cursor: "pointer",
-              }}
-            >
+           
              <BackToTopButton/>
-            </Box>
+          
           </Box>
           <Box
             sx={{

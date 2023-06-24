@@ -32,14 +32,28 @@ const BackToTopButton = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        /*    width: "104.21px",
-                  height: "26.04px", */
+        padding: "8px 16px",
+        /*   width: "137.81px", */
+        /*          height: "40px", */
+        border: "1px solid #e0e0e6",
+        borderRadius: "8px",
+        cursor: "pointer",
       }}
     >
-      <Typography sx={{ fontSize: "12px", color: "#9e9fb1", ml: "8px" }}>
-        بازگشت به بالا
-      </Typography>
-      <KeyboardArrowUpOutlinedIcon sx={{ color: "#9e9fb1" }} />
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          /*    width: "104.21px",
+                  height: "26.04px", */
+        }}
+      >
+        <Typography sx={{ fontSize: "12px", color: "#9e9fb1", ml: "8px" }}>
+          بازگشت به بالا
+        </Typography>
+        <KeyboardArrowUpOutlinedIcon sx={{ color: "#9e9fb1" }} />
+      </Box>
     </Box>
   );
 };

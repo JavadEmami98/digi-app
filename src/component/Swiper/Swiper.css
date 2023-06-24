@@ -7,8 +7,6 @@
   text-align: center;
   font-size: 18px;
   background: #ffffff;
-
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,10 +14,10 @@
 
 .swiper-slide1-img {
   width: 100%;
-  height: auto;
+  height: 100%;
  /*  max-width: 300px; */
   object-fit: cover;
-  overflow: hidden;
+ /*  overflow: hidden; */
 }
 
 .swiper-button-next {
