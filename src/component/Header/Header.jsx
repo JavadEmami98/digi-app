@@ -79,7 +79,7 @@ function Header() {
          /*  height: "40px", */
           fontSize: "12px",
           borderBottom: "1px solid  #e0e0e6",
-          pb:"5px"
+          pb:"5px",  position:"relative"
         }}
       >
         <Box
@@ -91,15 +91,16 @@ function Header() {
             fontSize: "18px",
             typography: "body2",
             cursor:"pointer",
+          
           }}
         >
           <div className="open-menu h-[40px] flex items-center">
           <MenuOutlinedIcon sx={{ pr: "5px" }} />
-          <Typography  sx={{ mr: "5px", fontSize: "14px", typography: "body2"}}>
+          <Typography  sx={{mr: "5px", fontSize: "14px", typography: "body2"}}>
             دسته‌بندی کالاها
           </Typography></div>
             {/* Menu */}
-            <div className="menu-bar absolute top-[105px] right-[5px] bg-red-200 z-10">
+            <div className="menu-bar absolute top-[40px] right-[5px] bg-white z-10">
               <div className="flex">
                 {/* column right */}
                 <div className=" border-l min-w-[180px]">
@@ -107,11 +108,11 @@ function Header() {
                   <PhoneIphoneIcon sx={{p:"2px"}}/>
                   <Typography sx={{fontSize:"13px",pr:"3px"}}>موبایل</Typography>
                 </Box>
-                  <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex items-center my-[10px] pr-1 py-2 cursor-pointer hover:bg-[#f1f2f4]">
+                  <Box sx={{"&:hover":{color:"#ef4056"}}} className="kala flex items-center my-[10px] pr-1 py-2 cursor-pointer hover:bg-[#f1f2f4]">
                   <LaptopIcon sx={{p:"2px"}}/>
                   <Typography sx={{fontSize:"13px",pr:"3px"}}>کالای دیجیتال</Typography>
                 </Box>
-                  <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex items-center my-[10px] pr-1 py-2 cursor-pointer hover:bg-[#f1f2f4]">
+                  <Box sx={{"&:hover":{color:"#ef4056"}}} className="home flex items-center my-[10px] pr-1 py-2 cursor-pointer hover:bg-[#f1f2f4]">
                   <ChairIcon sx={{p:"2px"}}/>
                   <Typography sx={{fontSize:"13px",pr:"3px"}}>خانه و آشپزخانه</Typography>
                 </Box>
@@ -137,6 +138,118 @@ function Header() {
                 <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">گوشی سونی</Box>
                 <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">گوشی نوکیا</Box>
                 <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">گوشی شیامی</Box>
+                 </div>
+                <div>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex border-r-[2px] border-[#ef394e] cursor-pointer">
+                <Typography sx={{fontSize:"15px",pr:"5px"}}>گوشی براساس قیمت    </Typography>
+                <ArrowBackIosNewIcon sx={{p:"7px"}}/>
+                </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> گوشی تا 2 میلیون تومان</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> گوشی تا 5 میلیون تومان</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> گوشی تا 7 میلیون تومان</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> گوشی تا 10 میلیون تومان</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> گوشی تا 15 میلیون تومان</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex border-r-[2px] border-[#ef394e] cursor-pointer">
+                <Typography sx={{fontSize:"15px",pr:"5px"}}>گوشی براساس حافظه داخلی      </Typography>
+                <ArrowBackIosNewIcon sx={{p:"7px"}}/>
+                </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> گوشی تا 16 گیگابایت</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">  گوشی تا 32 گیگابایت </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">   گوشی تا 64 گیگابایت</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">  گوشی تا 128 گیگابایت </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">  گوشی تا 256 گیگابایت </Box>
+                </div>
+                <div>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex border-r-[2px] border-[#ef394e] cursor-pointer">
+                <Typography sx={{fontSize:"15px",pr:"5px"}}> رزلوشن عکس</Typography>
+                <ArrowBackIosNewIcon sx={{p:"7px"}}/>
+                </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> تا 16 مگاپیکسل</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">  تا 32 مگاپیکسل</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">   تا 48 مگاپیکسل</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">   تا 50 مگاپیکسل</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">    تا 108 مگاپیکسل</Box>
+                </div>
+                  </div>
+                </div>
+                {/* برای خانه و آشپزخانه */}
+                <div className="home-option flex flex-col">
+                  <div className=" flex py-[20px] pr-[20px] w-full">
+                  <Typography sx={{fontSize:"14px"}}>همه محصولات خانه و آشپزخانه</Typography>
+                  <ArrowBackIosNewIcon sx={{p:"7px"}}/>
+                </div>
+                <div className="grid grid-cols-6 gap-5 pr-[20px] w-full">
+                 <div>
+                    <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex border-r-[2px] border-[#ef394e] cursor-pointer">
+                <Typography sx={{fontSize:"15px",pr:"5px"}}>تلویزیون</Typography>
+                <ArrowBackIosNewIcon sx={{p:"7px"}}/>
+                </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">ایکس ویژن </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> دوو</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> جی پلاس</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex border-r-[2px] border-[#ef394e] cursor-pointer">
+                <Typography sx={{fontSize:"15px",pr:"5px"}}>یخچال و فریز</Typography>
+                <ArrowBackIosNewIcon sx={{p:"7px"}}/>
+                </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> امرسان</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> ال جی</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> دوو </Box>
+                 </div>
+                <div>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex border-r-[2px] border-[#ef394e] cursor-pointer">
+                <Typography sx={{fontSize:"15px",pr:"5px"}}>گوشی براساس قیمت    </Typography>
+                <ArrowBackIosNewIcon sx={{p:"7px"}}/>
+                </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> گوشی تا 2 میلیون تومان</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> گوشی تا 5 میلیون تومان</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> گوشی تا 7 میلیون تومان</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> گوشی تا 10 میلیون تومان</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> گوشی تا 15 میلیون تومان</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex border-r-[2px] border-[#ef394e] cursor-pointer">
+                <Typography sx={{fontSize:"15px",pr:"5px"}}>گوشی براساس حافظه داخلی      </Typography>
+                <ArrowBackIosNewIcon sx={{p:"7px"}}/>
+                </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> گوشی تا 16 گیگابایت</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">  گوشی تا 32 گیگابایت </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">   گوشی تا 64 گیگابایت</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">  گوشی تا 128 گیگابایت </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">  گوشی تا 256 گیگابایت </Box>
+                </div>
+                <div>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex border-r-[2px] border-[#ef394e] cursor-pointer">
+                <Typography sx={{fontSize:"15px",pr:"5px"}}> رزلوشن عکس</Typography>
+                <ArrowBackIosNewIcon sx={{p:"7px"}}/>
+                </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> تا 16 مگاپیکسل</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">  تا 32 مگاپیکسل</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">   تا 48 مگاپیکسل</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">   تا 50 مگاپیکسل</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">    تا 108 مگاپیکسل</Box>
+                </div>
+                  </div>
+                </div>
+                {/* kala */}
+                <div className="kala-option flex flex-col">
+                  <div className=" flex py-[20px] pr-[20px] w-full">
+                  <Typography sx={{fontSize:"14px"}}>همه محصولات خانه و آشپزخانه</Typography>
+                  <ArrowBackIosNewIcon sx={{p:"7px"}}/>
+                </div>
+                <div className="grid grid-cols-6 gap-5 pr-[20px] w-full">
+                 <div>
+                    <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex border-r-[2px] border-[#ef394e] cursor-pointer">
+                <Typography sx={{fontSize:"15px",pr:"5px"}}>تلویزیون</Typography>
+                <ArrowBackIosNewIcon sx={{p:"7px"}}/>
+                </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer">ایکس ویژن </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> دوو</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> جی پلاس</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex border-r-[2px] border-[#ef394e] cursor-pointer">
+                <Typography sx={{fontSize:"15px",pr:"5px"}}>یخچال و فریز</Typography>
+                <ArrowBackIosNewIcon sx={{p:"7px"}}/>
+                </Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> امرسان</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> ال جی</Box>
+                <Box sx={{"&:hover":{color:"#ef4056"}}} className="text-[13px] text-[#767790] py-2 cursor-pointer"> دوو </Box>
                  </div>
                 <div>
                 <Box sx={{"&:hover":{color:"#ef4056"}}} className="flex border-r-[2px] border-[#ef394e] cursor-pointer">

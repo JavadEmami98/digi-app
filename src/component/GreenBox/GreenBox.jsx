@@ -59,20 +59,20 @@ function GreenBox() {
             alignItems: "center",
             columnGap:2,
             width:"100%"
-          /*   width: "467px", */
-     /*        height: "62px", */
-       /*      mr: "25px", */
+            /*width: "467px", */
+            /*height: "62px", */
+            /* mr: "25px", */
           }}
         >
           <img
             src="https://www.digikala.com/statics/img/png/amazing/fresh.png"
             alt=""
-            style={{height:"62px"}}
+            style={{height:"62px", cursor:"pointer"}}
           />
           <img
             src="https://www.digikala.com/statics/img/svg/typography/fresh.svg"
             alt=""
-            style={{maxwidth:"250px",height:"20px"}}
+            style={{maxwidth:"250px",height:"20px",cursor:"pointer"}}
           />
           <Typography
             sx={{
@@ -84,6 +84,7 @@ function GreenBox() {
               padding: "5px 12px",
               borderRadius: "15px",
               fontSize: "14px",
+              cursor:"pointer"
             }}
           >
             تا ۵۷٪ تخفیف
@@ -118,6 +119,16 @@ function GreenBox() {
                 maxheight: "74px",
                 backgroundColor: "white",
                 borderRadius: "50%",
+                cursor:"pointer",
+                img: {
+                  transition: "all ease-in 300ms ",
+                },
+                ":hover": {
+                  img: {
+                    transform: "scale(1.2)",
+                    transition: "all ease-in 300ms ",
+                  },
+                },
               }}
             >
               <img className="img-6" src={item.img} alt="" />
@@ -159,6 +170,7 @@ function GreenBox() {
            /*  ml: "25px", */
             borderRadius: "25px",
             padding: "0 15px",
+            cursor:"pointer"
           }}
         >
           <Typography sx={{ fontSize: "12px" }}>بیش از ۱۰۰ کالا</Typography>

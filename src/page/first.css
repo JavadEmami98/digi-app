@@ -240,6 +240,7 @@
   border-radius: 16px;
 }
 
+/* Menu */
 .menu-bar {
   display: none;
 }
@@ -256,19 +257,54 @@
   display: block;
 }
 
-
-.mobile {
+/* Mobile */
+.mobile-option {
   display: none;
 }
 
-.mobile-option:hover + .mobile-option {
+.mobile:hover + .mobile {
   display: block;
 }
 
-.mobile-option:hover + .mobile {
+.mobile:hover + .mobile-option {
   display: block;
 }
 
-.mobile:hover {
+.mobile-option:hover {
   display: block;
 }
+
+
+/* Home */
+.home-option {
+  display: none;
+}
+
+.home:hover + .home {
+  display: block;
+}
+
+.home:hover + .home-option {
+  display: block;
+}
+
+.home-option:hover {
+  display: block;
+}
+
+/* kala */
+.kala-option {
+  display: none;
+}
+
+.kala:hover + .kala-option {
+  display: block;
+}
+
+.kala:hover + .kala {
+  display: block;
+} 
+
+.kala-option:hover {
+  display: block;
+} 

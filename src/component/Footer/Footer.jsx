@@ -3,6 +3,7 @@ import { Box, Typography } from "@mui/material";
 import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
 import ArrowBackIosNewOutlinedIcon from "@mui/icons-material/ArrowBackIosNewOutlined";
 import FooterGrid from "./FooterGrid";
+import BackToTopButton from "../BackToTop/BackToTop";
 
 const rezvan = [
   { image: "https://www.digikala.com/statics/img/png/rezi.png" },
@@ -24,6 +25,7 @@ const picsft = [
   { image: "https://www.digikala.com/statics/img/svg/appStores/sib-app.svg" },
 ];
 
+ 
 function Footer() {
   return (
     <div>
@@ -62,22 +64,7 @@ function Footer() {
                 cursor: "pointer",
               }}
             >
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-               /*    width: "104.21px",
-                  height: "26.04px", */
-                }}
-              >
-                <Typography
-                  sx={{ fontSize: "12px", color: "#9e9fb1", ml: "8px" }}
-                >
-                  بازگشت به بالا
-                </Typography>
-                <KeyboardArrowUpOutlinedIcon sx={{ color: "#9e9fb1" }} />
-              </Box>
+             <BackToTopButton/>
             </Box>
           </Box>
           <Box
@@ -165,7 +152,7 @@ function Footer() {
                 flexDirection: "column",
                 alignItems: "center",
                 /* width: "100%", */
-     /*            height: "103.86px", */
+                /*height: "103.86px", */
                 padding: "12px 0",
               }}
             >

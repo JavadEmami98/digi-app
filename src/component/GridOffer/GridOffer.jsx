@@ -122,45 +122,6 @@ function GridOffer() {
               />
             </Grid>
           ))}
-          {/* <Grid item xs={2}>
-        vsfvfsdgf
-      </Grid>
-      <Grid item xs={2}>
-        vsfvfsdgf
-      </Grid>
-      <Grid item xs={2}>
-        sdhsadsa
-      </Grid>
-      <Grid item xs={2}>
-        sdhsadsa
-      </Grid>
-      <Grid item xs={2}>
-        sdhsadsa
-      </Grid>
-      <Grid item xs={2}>
-        sdhsadsa
-      </Grid>
-      <Grid item xs={2}>
-        sdhsadsa
-      </Grid>
-      <Grid item xs={2}>
-        sdhsadsa
-      </Grid>
-      <Grid item xs={2}>
-        sdhsadsa
-      </Grid>
-      <Grid item xs={2}>
-        sdhsadsa
-      </Grid>
-      <Grid item xs={2}>
-        sdhsadsa
-      </Grid>
-      <Grid item xs={2}>
-        sdhsadsa
-      </Grid>
-      <Grid item xs={2}>
-        sdhsadsa
-      </Grid> */}
         </Grid>
       </Box>
     </div>

@@ -68,16 +68,21 @@ const card = [
 
 export default function BasicGrid() {
   return (
-    <Box sx={{ flexGrow: 1,overflowX:"auto" }}>
+    <Box sx={{ flexGrow: 1, overflowX: "auto" }}>
       <Box
         className="grid grid-cols-6 gap-[1px]"
-        sx={{mt: "10px",border: "1px solid #e0e0e6", borderRadius:"16px",overflowX:"auto"}}
-      > 
+        sx={{
+          mt: "10px",
+          border: "1px solid #e0e0e6",
+          borderRadius: "16px",
+          overflowX: "auto",
+        }}
+      >
         {card.map((item, index) => (
           <Fragment key={index}>
             <Card title={item.title} image={item.image} />
           </Fragment>
-        ))}  
+        ))}
       </Box>
     </Box>
   );

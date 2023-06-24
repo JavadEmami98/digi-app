@@ -87,6 +87,7 @@ function Grouping() {
           justifyContent: "center",
           alignItems: "center",
           mt: "25px",
+          cursor:"pointer"
         }}
       >
         <Typography sx={{ fontSize: "20px", }}>

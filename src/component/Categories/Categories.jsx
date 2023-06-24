@@ -68,7 +68,9 @@ function Categories() {
           sx={{
             display: "flex",
             justifyContent: "space-between",
-            overflow:"auto",width:"100%"
+            overflow:"auto",
+            width:"100%",
+            cursor:"pointer"
           }}
         >
           {CATEGROY.map((item, index) => (
@@ -84,7 +86,15 @@ function Categories() {
                 paddingTop: "5px",
                 paddingBottom: "5px",
                 typography: "body2",
-                
+                img: {
+                  transition: "all ease-in 300ms ",
+                },
+                ":hover": {
+                  img: {
+                    transform: "scale(1.2)",
+                    transition: "all ease-in 300ms ",
+                  },
+                },
               }}
             >
               <img

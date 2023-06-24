@@ -5,16 +5,25 @@ function GpCart({image, title}) {
   return (
     <div>
         
-          <Box
-            
+          <Box   
             sx={{
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
               /* width: "212px", */
-        /*       height: "205px", */
+              /* height: "205px", */
               backgroundColor: "#white",
+              cursor:"pointer",
+              img: {
+                transition: "all ease-in 350ms ",
+              },
+              ":hover": {
+                img: {
+                  transform: "scale(1.2)",
+                  transition: "all ease-in 350ms ",
+                },
+              },
             }}
           >
             <img className="wrap-pic" src={image} alt="" />
