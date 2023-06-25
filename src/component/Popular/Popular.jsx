@@ -12,21 +12,22 @@ function Popular() {
           justifyContent: "center",
           alignItems: "center",
           /* width: "1304px", */
-          height: "224px",
+         /*  height: "224px", */
           flexDirection: "column",
           mt: "24px",
           border: "1px solid #e0e0e6",
           borderRadius: "16px",
+      
         }}
       >
         <Box
           sx={{
             display: "flex",
-            justifyContent: "center",
+            justifyContent: "center", 
             alignItems: "center",
             /* Maxwidth: "1304px", */
           /*   width: "100%", */
-            height: "44px",
+          /*   height: "44px", */
             mt: "15px",
           }}
         >

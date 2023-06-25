@@ -12,7 +12,6 @@ function Suggestion() {
       >
         <Typography sx={{ fontSize: "20px" }}>پیشنهاد دیجی‌ کالا</Typography>
       </Box>
-
       <BasicGrid />
     </div>
   );

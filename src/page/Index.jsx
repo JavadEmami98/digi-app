@@ -110,7 +110,7 @@ function Index() {
         <Four/>
 
      
-      {/* <BestSelling />  */}
+      {/*<BestSelling/>*/}
          <Offer />
         <Reading />
       </Container>

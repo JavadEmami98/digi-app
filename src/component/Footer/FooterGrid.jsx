@@ -245,7 +245,7 @@ function FooterGrid() {
               </Typography>
 
               <Box
-                sx={{ display: "flex", alignItems: "center", width: "100%" }}
+                sx={{ display: "flex", alignItems: "center", width: "100%",border:"none" }}
               >
                 <input
                   className="input-footer"
@@ -262,6 +262,8 @@ function FooterGrid() {
                     borderRadius: "8px",
                     mr: "8px",
                     fontSize: "17px",
+                    "&:hover":{background:"#ef394e"},
+                    border:"none"
                   }}
                 >
                   ثبت

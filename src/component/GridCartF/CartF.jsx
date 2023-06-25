@@ -11,6 +11,7 @@ function CartF({ title, image }) {
           border: "1px solid #e0e0e6",
           borderRadius: "8px",
           overflow: "hidden",
+          cursor:"pointer"
         }}
       >
         <img className="pics-up-footer" src={image} alt="" loading="lazy" />
